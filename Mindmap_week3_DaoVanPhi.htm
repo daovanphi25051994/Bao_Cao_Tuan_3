@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)http://localhost -->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Map1</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #content-info{
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #author-info{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        #title{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding-top: 10px;
+            margin-bottom: 2px;
+            font-size: 34px;
+            color: #505050;
+        }
+        .text{
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 2px;
+            font-size: 20px;
+            color: #8c8c8c;
+        }
+        #navBar{
+            width: auto;
+            height: auto;
+            position: fixed;
+            right:0;
+            bottom: 0;
+            background-color: #f0f3f4;
+            overflow-y: auto;
+            text-align: center;
+        }
+        #svg-container{
+            width: 100%;
+            overflow-x: scroll;
+            min-width: 0px;
+            margin: 0 10px;
+        }
+        #nav-thumbs{
+            overflow-y: scroll;
+            padding: 0 5px;
+        }
+        .nav-thumb{
+            position: relative;
+            margin: 10px auto;
+        }
+        .nav-thumb >p{
+            text-align: center;
+            font-size: 12px;
+            margin: 4px 0 0 0;
+        }
+        .nav-thumb >div{
+            position: relative;
+            display: inline-block;
+            border: 1px solid #c6cfd5;
+        }
+        .nav-thumb img{
+            display: block;
+        }
+        #main-content{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #d0cfd8;
+            display: flex;
+            height: auto;
+            flex-flow: row wrap;
+            text-align:center;
+        }
+        #svg-container >svg{
+            display: block;
+            margin:10px auto;
+            margin-bottom: 0;
+        }
+        #copyright{
+            bottom: 0;
+            left: 50%;
+            margin: 5px auto;
+            font-size: 16px;
+            color: #515151;
+        }
+        #copyright >a{
+            text-decoration: none;
+            color: #77C;
+        }
+        .number{
+            position: absolute;
+            top:0;
+            left:0;
+            border-top:22px solid #08a1ef;
+            border-right: 22px solid transparent;
+        }
+        .pagenum{
+            font-size: 12px;
+            color: #fff;
+            position: absolute;
+            top: -23px;
+            left: 2px;
+        }
+            #navBar::-webkit-scrollbar{
+            width: 8px;
+            background-color: #f5f5f5;
+        }
+            #navBar::-webkit-scrollbar-track{
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            border-radius: 8px;
+            background-color: #fff;
+        }
+            #navBar::-webkit-scrollbar-thumb{
+            border-radius: 8px;
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            background-color: #6b6b70;
+        }
+        #navBar::-webkit-scrollbar-thumb:hover{
+            background-color: #4a4a4f;
+        }
+</style>
+  </head>
+  <body>
+    <div id="main-area">
+      <div id="content-info">
+        <div id="content-info">
+          <div id="title">Map1</div>
+        </div>
+        <div id="author-info">
+          <div id="author-name" class="text">Ad05n</div>
+          <div id="share-time" class="text">2020-02-28</div>
+        </div>
+      </div>
+      <div id="main-content">
+        <div id="svg-container"><svg height="1006" viewBox="0 0 6773 1006" id="page1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" preserveAspectRadio="xMinYMin meet" ed:vSpacing="30" ed:hSpacing="30" ed:name="Page-1" xmlns:ev="http://www.w3.org/2001/xml-events" width="6772" xmlns:ed="https://www.edrawsoft.com/xml/2017/SVGExtensions/">
+    <style type="text/css"><![CDATA[
+g[ed\:togtopicid],g[ed\:hyperlink],g[ed\:comment],g[ed\:note] {cursor:pointer;}
+g[id] {-moz-user-select: none;-ms-user-select: none;user-select: none;}
+svg text::selection,svg tspan::selection{background-color: #4285f4;color: #ffffff;fill: #ffffff;}
+.st2 {fill:#ffffff;font-family:Arial;font-size:10pt}
+.st1 {fill:#ffffff;font-family:Arial;font-size:12pt}
+.st3 {fill:#ffffff;font-family:Arial;font-size:14pt}
+]]></style>
+    <defs>
+        <linearGradient x2="0%" y1="0%" id="lg1" y2="100%" x1="0%">
+            <stop stop-color="#ffffff" offset="0"/>
+            <stop stop-color="#f0f5f0" offset="0.25"/>
+            <stop stop-color="#e1ebe1" offset="0.75"/>
+            <stop stop-color="#c8d7c8" offset="1"/>
+        </linearGradient>
+    </defs>
+    <rect height="1006" fill="#12374a" y="0" width="6773" x="0"/>
+    <g id="102" ed:width="128" ed:parentid="101" ed:height="43" transform="translate(904.5,276)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L124,0C126.2,0,128,1.8,128,4L128,39C128,41.2,126.2,43,124,43L4,43C1.8,43,0,41.2,0,39L0,4C0,1.8,1.8,0,4,0z" stroke-width="3" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="103" stroke="#faf4ea" d="M1208.9,-30L1208.9,-3.6L-1202.9,-3.6C-1206.2,-3.6,-1208.9,-0.9,-1208.9,2.4L-1208.9,30" stroke-width="3" stroke-linejoin="round" transform="translate(1272.88,-30)"/>
+        <text class="st1">
+            <tspan style="white-space:pre" y="27.5" lengthAdjust="spacing" textLength="83" x="23">Cấu trúc lặp</tspan>
+        </text>
+    </g>
+    <g id="104" ed:width="84" ed:parentid="101" ed:height="43" transform="translate(2673,276)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L80,0C82.2,0,84,1.8,84,4L84,39C84,41.2,82.2,43,80,43L4,43C1.8,43,0,41.2,0,39L0,4C0,1.8,1.8,0,4,0z" stroke-width="3" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="105" stroke="#faf4ea" d="M335.6,-30L335.6,-3.6L-329.6,-3.6C-332.9,-3.6,-335.6,-0.9,-335.6,2.4L-335.6,30" stroke-width="3" stroke-linejoin="round" transform="translate(377.63,-30)"/>
+        <text class="st1">
+            <tspan style="white-space:pre" y="27.5" lengthAdjust="spacing" textLength="39" x="23">Mảng</tspan>
+        </text>
+    </g>
+    <g id="106" ed:width="78" ed:parentid="101" ed:height="43" transform="translate(4403.25,276)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L74,0C76.2,0,78,1.8,78,4L78,39C78,41.2,76.2,43,74,43L4,43C1.8,43,0,41.2,0,39L0,4C0,1.8,1.8,0,4,0z" stroke-width="3" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="107" stroke="#faf4ea" d="M-528,-30L-528,-3.6L522,-3.6C525.3,-3.6,528,-0.9,528,2.4L528,30" stroke-width="3" stroke-linejoin="round" transform="translate(-489,-30)"/>
+        <text class="st1">
+            <tspan style="white-space:pre" y="27.5" lengthAdjust="spacing" textLength="33" x="23">Hàm</tspan>
+        </text>
+    </g>
+    <g id="108" ed:width="72" ed:parentid="102" ed:height="22" transform="translate(424.5,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L68,0C70.2,0,72,1.8,72,4L72,18C72,20.2,70.2,22,68,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="109" stroke="#faf4ea" d="M254,-22.5C254,9,-254,-22.5,-254,22.5" stroke-linejoin="round" transform="translate(290,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="61" x="6">While loop</tspan>
+        </text>
+    </g>
+    <g id="110" ed:width="89" ed:parentid="104" ed:height="22" transform="translate(1912.5,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L85,0C87.2,0,89,1.8,89,4L89,18C89,20.2,87.2,22,85,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="111" stroke="#faf4ea" d="M379,-22.5C379,9,-379,-22.5,-379,22.5" stroke-linejoin="round" transform="translate(423.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="78" x="6">Mảng 1 chiều</tspan>
+        </text>
+    </g>
+    <g id="112" ed:width="88" ed:parentid="102" ed:height="22" transform="translate(1044,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L84,0C86.2,0,88,1.8,88,4L88,18C88,20.2,86.2,22,84,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="113" stroke="#faf4ea" d="M-59.8,-22.5C-59.8,7.2,59.8,-18.2,59.8,22.5" stroke-linejoin="round" transform="translate(-15.75,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="77" x="6">Do while loop</tspan>
+        </text>
+    </g>
+    <g id="114" ed:width="58" ed:parentid="102" ed:height="22" transform="translate(1567,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L54,0C56.2,0,58,1.8,58,4L58,18C58,20.2,56.2,22,54,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="115" stroke="#faf4ea" d="M-313.8,-22.5C-313.8,9,313.8,-22.5,313.8,22.5" stroke-linejoin="round" transform="translate(-284.75,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="47" x="6">For loop</tspan>
+        </text>
+    </g>
+    <g id="116" ed:width="89" ed:parentid="104" ed:height="22" transform="translate(2231.5,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L85,0C87.2,0,89,1.8,89,4L89,18C89,20.2,87.2,22,85,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="117" stroke="#faf4ea" d="M219.5,-22.5C219.5,9,-219.5,-22.5,-219.5,22.5" stroke-linejoin="round" transform="translate(264,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="78" x="6">Mảng 2 chiều</tspan>
+        </text>
+    </g>
+    <g id="118" ed:width="147" ed:parentid="106" ed:height="22" transform="translate(3790.5,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L143,0C145.2,0,147,1.8,147,4L147,18C147,20.2,145.2,22,143,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="119" stroke="#faf4ea" d="M289.1,-22.5C289.1,9,-289.1,-22.5,-289.1,22.5" stroke-linejoin="round" transform="translate(362.63,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="136" x="6">Hàm có truyền tham số</tspan>
+        </text>
+    </g>
+    <g id="120" ed:width="168" ed:parentid="106" ed:height="22" transform="translate(4177,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L164,0C166.2,0,168,1.8,168,4L168,18C168,20.2,166.2,22,164,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="121" stroke="#faf4ea" d="M90.6,-22.5C90.6,9,-90.6,-22.5,-90.6,22.5" stroke-linejoin="round" transform="translate(174.63,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="157" x="6">Hàm không truyền tham số</tspan>
+        </text>
+    </g>
+    <g id="122" ed:width="146" ed:parentid="106" ed:height="22" transform="translate(4619.5,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L142,0C144.2,0,146,1.8,146,4L146,18C146,20.2,144.2,22,142,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="123" stroke="#faf4ea" d="M-125.1,-22.5C-125.1,9,125.1,-22.5,125.1,22.5" stroke-linejoin="round" transform="translate(-52.13,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="135" x="6">Hàm truyền tham chiếu</tspan>
+        </text>
+    </g>
+    <g id="124" ed:width="619" ed:parentid="108" ed:height="22" transform="translate(151,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L615,0C617.2,0,619,1.8,619,4L619,18C619,20.2,617.2,22,615,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="125" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(309.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="608" x="6">Cấu trúc : while(điều kiên){//code} . Nếu điều kiện dúng thì sẽ chạy code cho đến khi điều kiện sai thì thôi</tspan>
+        </text>
+    </g>
+    <g id="128" ed:width="607" ed:parentid="112" ed:height="22" transform="translate(784.5,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L603,0C605.2,0,607,1.8,607,4L607,18C607,20.2,605.2,22,603,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="129" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(303.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="596" x="6">Cấu trúc : do{//code}while(điều kiện); . chương trình chạy khối lệnh do trước. Sau đó mới xét điều kiện</tspan>
+        </text>
+    </g>
+    <g id="130" ed:width="384" ed:parentid="124" ed:height="22" transform="translate(268.5,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L380,0C382.2,0,384,1.8,384,4L384,18C384,20.2,382.2,22,380,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="131" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(192,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="373" x="6">Ưu điểm: Dùng khi vòng lặp chưa xác định được điều kiện dừng</tspan>
+        </text>
+    </g>
+    <g id="134" ed:width="439" ed:parentid="128" ed:height="22" transform="translate(868.5,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L435,0C437.2,0,439,1.8,439,4L439,18C439,20.2,437.2,22,435,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="135" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(219.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="428" x="6">Ưu điểm : chương trình sẽ chạy code trong khối "do" cho dù điều kiện sai</tspan>
+        </text>
+    </g>
+    <g id="136" ed:width="380" ed:parentid="114" ed:height="22" transform="translate(1406,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L376,0C378.2,0,380,1.8,380,4L380,18C380,20.2,378.2,22,376,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="137" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(190,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="369" x="6">Cấu trúc : for(biến khởi tạo; điều kiện dừng; bước nhảy){//code}</tspan>
+        </text>
+    </g>
+    <g id="138" ed:width="358" ed:parentid="136" ed:height="22" transform="translate(1417,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L354,0C356.2,0,358,1.8,358,4L358,18C358,20.2,356.2,22,354,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="139" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(179,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="347" x="6">Ưu điểm: biết rõ điểm dừng của vòng lặp. Sử dụng phổ biến</tspan>
+        </text>
+    </g>
+    <g id="140" ed:width="258" ed:parentid="110" ed:height="22" transform="translate(1828,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L254,0C256.2,0,258,1.8,258,4L258,18C258,20.2,256.2,22,254,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="141" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(129,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="247" x="6">Là biến đặc biệt lưu trữ được nhiều giá trị </tspan>
+        </text>
+    </g>
+    <g id="142" ed:width="282" ed:parentid="140" ed:height="22" transform="translate(1816,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L278,0C280.2,0,282,1.8,282,4L282,18C282,20.2,280.2,22,278,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="143" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(141,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="271" x="6">Ứng dụng rất nhiều khi thao tác với dữ liệu lớn</tspan>
+        </text>
+    </g>
+    <g id="144" ed:width="327" ed:parentid="116" ed:height="22" transform="translate(2112.5,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L323,0C325.2,0,327,1.8,327,4L327,18C327,20.2,325.2,22,323,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="145" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(163.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="316" x="6">Là mảng được sử dụng rộng rãi. Thích hợp làm game </tspan>
+        </text>
+    </g>
+    <g id="146" ed:width="169" ed:parentid="144" ed:height="22" transform="translate(2191.5,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L165,0C167.2,0,169,1.8,169,4L169,18C169,20.2,167.2,22,165,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="147" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(84.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="158" x="6">Khởi tạo : let tenMang = [];</tspan>
+        </text>
+    </g>
+    <g id="148" ed:width="198" ed:parentid="146" ed:height="22" transform="translate(2177,565)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L194,0C196.2,0,198,1.8,198,4L198,18C198,20.2,196.2,22,194,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="149" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(99,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="187" x="6">Hoặc let tenMang = new Array();</tspan>
+        </text>
+    </g>
+    <g id="150" ed:width="179" ed:parentid="104" ed:height="22" transform="translate(2763.75,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L175,0C177.2,0,179,1.8,179,4L179,18C179,20.2,177.2,22,175,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="151" stroke="#faf4ea" d="M-69.1,-22.5C-69.1,8.1,69.1,-20.4,69.1,22.5" stroke-linejoin="round" transform="translate(20.38,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="168" x="6">1 số hàm hay dùng với mảng</tspan>
+        </text>
+    </g>
+    <g id="152" ed:width="193" ed:parentid="164" ed:height="22" transform="translate(2622.5,699)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L189,0C191.2,0,193,1.8,193,4L193,18C193,20.2,191.2,22,189,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="153" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(96.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="182" x="6">.length : trả vê độ dài của mảng</tspan>
+        </text>
+    </g>
+    <g id="154" ed:width="203" ed:parentid="150" ed:height="22" transform="translate(2617.5,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L199,0C201.2,0,203,1.8,203,4L203,18C203,20.2,201.2,22,199,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="155" stroke="#faf4ea" d="M67.1,-22.5C67.1,7.9,-67.1,-20,-67.1,22.5" stroke-linejoin="round" transform="translate(168.63,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="192" x="6">.push: Thêm giá trị vào sau mảng</tspan>
+        </text>
+    </g>
+    <g id="156" ed:width="217" ed:parentid="150" ed:height="22" transform="translate(3017,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L213,0C215.2,0,217,1.8,217,4L217,18C217,20.2,215.2,22,213,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="157" stroke="#faf4ea" d="M-136.1,-22.5C-136.1,9,136.1,-22.5,136.1,22.5" stroke-linejoin="round" transform="translate(-27.63,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="206" x="6">.unshift : Thêm giá trị vào đầu mảng</tspan>
+        </text>
+    </g>
+    <g id="158" ed:width="222" ed:parentid="154" ed:height="22" transform="translate(2608,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L218,0C220.2,0,222,1.8,222,4L222,18C222,20.2,220.2,22,218,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="159" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(111,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="211" x="6">.pop : cắt giá trị trong mảng và trả về</tspan>
+        </text>
+    </g>
+    <g id="160" ed:width="254" ed:parentid="156" ed:height="22" transform="translate(2998.5,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L250,0C252.2,0,254,1.8,254,4L254,18C254,20.2,252.2,22,250,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="161" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(127,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="243" x="6">.shift : Cắt giá trị đầu trong mảng rồi trả về</tspan>
+        </text>
+    </g>
+    <g id="162" ed:width="256" ed:parentid="158" ed:height="22" transform="translate(2591,565)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L252,0C254.2,0,256,1.8,256,4L256,18C256,20.2,254.2,22,252,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="163" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(128,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="245" x="6">.toString, .Join : chuyển mảng thành chuỗi</tspan>
+        </text>
+    </g>
+    <g id="164" ed:width="530" ed:parentid="162" ed:height="22" transform="translate(2454,632)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L526,0C528.2,0,530,1.8,530,4L530,18C530,20.2,528.2,22,526,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="165" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(265,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="519" x="6">.split(Ký tự phân tách chuỗi, phần từ tối đa trong mảng trả về) : chuyển chuỗi thành mảng</tspan>
+        </text>
+    </g>
+    <g id="166" ed:width="245" ed:parentid="118" ed:height="22" transform="translate(3741.5,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L241,0C243.2,0,245,1.8,245,4L245,18C245,20.2,243.2,22,241,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="167" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(122.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="234" x="6">function tenHam(tham số){//code ;return}</tspan>
+        </text>
+    </g>
+    <g id="168" ed:width="440" ed:parentid="166" ed:height="22" transform="translate(3644,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L436,0C438.2,0,440,1.8,440,4L440,18C440,20.2,438.2,22,436,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="169" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(220,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="429" x="6">Hàm nhận tham số chuyền vào tính toán sau đó trả về kết quả hoặc không</tspan>
+        </text>
+    </g>
+    <g id="170" ed:width="194" ed:parentid="120" ed:height="22" transform="translate(4164,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L190,0C192.2,0,194,1.8,194,4L194,18C194,20.2,192.2,22,190,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="171" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(97,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="183" x="6">function tenHam(){//code;return}</tspan>
+        </text>
+    </g>
+    <g id="172" ed:width="325" ed:parentid="170" ed:height="22" transform="translate(4098.5,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L321,0C323.2,0,325,1.8,325,4L325,18C325,20.2,323.2,22,321,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="173" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(162.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="314" x="6">Hàm không cần chuyền tham số được sử dụng ít hơn</tspan>
+        </text>
+    </g>
+    <g id="174" ed:width="99" ed:parentid="106" ed:height="22" transform="translate(5051.5,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L95,0C97.2,0,99,1.8,99,4L99,18C99,20.2,97.2,22,95,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="175" stroke="#faf4ea" d="M-329.4,-22.5C-329.4,9,329.4,-22.5,329.4,22.5" stroke-linejoin="round" transform="translate(-279.88,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="88" x="6">Hàm không tên</tspan>
+        </text>
+    </g>
+    <g id="176" ed:width="258" ed:parentid="122" ed:height="22" transform="translate(4563.5,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L254,0C256.2,0,258,1.8,258,4L258,18C258,20.2,256.2,22,254,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="177" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(129,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="247" x="6">function tenHam(tham chiếu){//code;return}</tspan>
+        </text>
+    </g>
+    <g id="178" ed:width="509" ed:parentid="176" ed:height="22" transform="translate(4438,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L505,0C507.2,0,509,1.8,509,4L509,18C509,20.2,507.2,22,505,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="179" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(254.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="498" x="6">nếu chuyền tham chiếu thì hàm sẽ làm thay đổi giá trị của biến mà tham chiếu trỏ đến</tspan>
+        </text>
+    </g>
+    <g id="180" ed:width="166" ed:parentid="174" ed:height="22" transform="translate(5018,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L162,0C164.2,0,166,1.8,166,4L166,18C166,20.2,164.2,22,162,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="181" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(83,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="155" x="6">let result = function{//code}</tspan>
+        </text>
+    </g>
+    <g id="182" ed:width="279" ed:parentid="180" ed:height="22" transform="translate(4961.5,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L275,0C277.2,0,279,1.8,279,4L279,18C279,20.2,277.2,22,275,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="183" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(139.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="268" x="6">Hàm trả về luôn giá trị rồi gán cho biến đó luôn</tspan>
+        </text>
+    </g>
+    <g id="184" ed:width="131" ed:parentid="160" ed:height="22" transform="translate(3060,565)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L127,0C129.2,0,131,1.8,131,4L131,18C131,20.2,129.2,22,127,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="185" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(65.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="120" x="6">.sort : sắp xếp mảng</tspan>
+        </text>
+    </g>
+    <g id="186" ed:width="168" ed:parentid="184" ed:height="22" transform="translate(3041.5,632)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L164,0C166.2,0,168,1.8,168,4L168,18C168,20.2,166.2,22,164,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="187" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(84,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="157" x="6">.reverse : đảo ngược mảng</tspan>
+        </text>
+    </g>
+    <g id="188" ed:width="89" ed:parentid="104" ed:height="22" transform="translate(3396,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L85,0C87.2,0,89,1.8,89,4L89,18C89,20.2,87.2,22,85,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="189" stroke="#faf4ea" d="M-362.8,-22.5C-362.8,9,362.8,-22.5,362.8,22.5" stroke-linejoin="round" transform="translate(-318.25,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="78" x="6">Mảng liên kết</tspan>
+        </text>
+    </g>
+    <g id="190" ed:width="347" ed:parentid="188" ed:height="22" transform="translate(3267,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L343,0C345.2,0,347,1.8,347,4L347,18C347,20.2,345.2,22,343,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="191" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(173.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="336" x="6">Vd : let arr = ["name" => ["class : C0220H1", "Age : 18"]];</tspan>
+        </text>
+    </g>
+    <g id="192" ed:width="308" ed:parentid="190" ed:height="22" transform="translate(3286.5,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L304,0C306.2,0,308,1.8,308,4L308,18C308,20.2,306.2,22,304,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="193" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(154,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="297" x="6">Mảng này sẽ trỏ đến tuổi 18 nếu gọi : arr.name.Age</tspan>
+        </text>
+    </g>
+    <g id="194" ed:width="125" ed:parentid="101" ed:height="43" transform="translate(5883.5,276)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L121,0C123.2,0,125,1.8,125,4L125,39C125,41.2,123.2,43,121,43L4,43C1.8,43,0,41.2,0,39L0,4C0,1.8,1.8,0,4,0z" stroke-width="3" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="195" stroke="#faf4ea" d="M-1279.9,-30L-1279.9,-3.6L1273.9,-3.6C1277.2,-3.6,1279.9,-0.9,1279.9,2.4L1279.9,30" stroke-width="3" stroke-linejoin="round" transform="translate(-1217.38,-30)"/>
+        <text class="st1">
+            <tspan style="white-space:pre" y="27.5" lengthAdjust="spacing" textLength="80" x="23">Clean code</tspan>
+        </text>
+    </g>
+    <g id="196" ed:width="85" ed:parentid="194" ed:height="22" transform="translate(5455.25,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L81,0C83.2,0,85,1.8,85,4L85,18C85,20.2,83.2,22,81,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="197" stroke="#faf4ea" d="M224.1,-22.5C224.1,9,-224.1,-22.5,-224.1,22.5" stroke-linejoin="round" transform="translate(266.63,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="74" x="6">Cách đặt tên</tspan>
+        </text>
+    </g>
+    <g id="198" ed:width="93" ed:parentid="194" ed:height="22" transform="translate(5852,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L89,0C91.2,0,93,1.8,93,4L93,18C93,20.2,91.2,22,89,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="199" stroke="#faf4ea" d="M23.8,-22.5C23.8,0.9,-23.8,-3.7,-23.8,22.5" stroke-linejoin="round" transform="translate(70.25,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="82" x="6">Giới hạn code</tspan>
+        </text>
+    </g>
+    <g id="200" ed:width="112" ed:parentid="194" ed:height="22" transform="translate(6156,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L108,0C110.2,0,112,1.8,112,4L112,18C112,20.2,110.2,22,108,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="201" stroke="#faf4ea" d="M-133,-22.5C-133,9,133,-22.5,133,22.5" stroke-linejoin="round" transform="translate(-77,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="101" x="6">Cách xuống hàng</tspan>
+        </text>
+    </g>
+    <g id="202" ed:width="97" ed:parentid="194" ed:height="22" transform="translate(6445.5,364)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L93,0C95.2,0,97,1.8,97,4L97,18C97,20.2,95.2,22,93,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="203" stroke="#faf4ea" d="M-274,-22.5C-274,9,274,-22.5,274,22.5" stroke-linejoin="round" transform="translate(-225.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="86" x="6">cách comment</tspan>
+        </text>
+    </g>
+    <g id="204" ed:width="145" ed:parentid="196" ed:height="22" transform="translate(5271.5,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L141,0C143.2,0,145,1.8,145,4L145,18C145,20.2,143.2,22,141,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="205" stroke="#faf4ea" d="M76.9,-22.5C76.9,8.6,-76.9,-21.7,-76.9,22.5" stroke-linejoin="round" transform="translate(149.38,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="134" x="6">Tên class :PascalCase</tspan>
+        </text>
+    </g>
+    <g id="206" ed:width="147" ed:parentid="204" ed:height="22" transform="translate(5270.5,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L143,0C145.2,0,147,1.8,147,4L147,18C147,20.2,145.2,22,143,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="207" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(73.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="136" x="6">Biến, hàm : camelCase</tspan>
+        </text>
+    </g>
+    <g id="208" ed:width="137" ed:parentid="206" ed:height="22" transform="translate(5275.5,565)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L133,0C135.2,0,137,1.8,137,4L137,18C137,20.2,135.2,22,133,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="209" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(68.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="126" x="6">Hằng: UPPER_CASE</tspan>
+        </text>
+    </g>
+    <g id="210" ed:width="280" ed:parentid="196" ed:height="22" transform="translate(5438.5,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L276,0C278.2,0,280,1.8,280,4L280,18C280,20.2,278.2,22,276,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="211" stroke="#faf4ea" d="M-40.4,-22.5C-40.4,4.2,40.4,-11.4,40.4,22.5" stroke-linejoin="round" transform="translate(99.63,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="269" x="6">Biến, lớp là các danh từ, cụm danh từ, tính từ</tspan>
+        </text>
+    </g>
+    <g id="212" ed:width="189" ed:parentid="210" ed:height="22" transform="translate(5484,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L185,0C187.2,0,189,1.8,189,4L189,18C189,20.2,187.2,22,185,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="213" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(94.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="178" x="6">Tên hàm bắt đầu bằng động từ</tspan>
+        </text>
+    </g>
+    <g id="214" ed:width="293" ed:parentid="212" ed:height="22" transform="translate(5432,565)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L289,0C291.2,0,293,1.8,293,4L293,18C293,20.2,291.2,22,289,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="215" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(146.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="282" x="6">Tên phải có nghĩa rõ. không đặt tên chung chung</tspan>
+        </text>
+    </g>
+    <g id="216" ed:width="186" ed:parentid="198" ed:height="22" transform="translate(5805.5,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L182,0C184.2,0,186,1.8,186,4L186,18C186,20.2,184.2,22,182,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="217" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(93,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="175" x="6">1 hàm không nên quá 30 dòng</tspan>
+        </text>
+    </g>
+    <g id="218" ed:width="187" ed:parentid="216" ed:height="22" transform="translate(5805,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L183,0C185.2,0,187,1.8,187,4L187,18C187,20.2,185.2,22,183,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="219" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(93.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="176" x="6">1 lớp không nên quá 500 dòng</tspan>
+        </text>
+    </g>
+    <g id="220" ed:width="318" ed:parentid="218" ed:height="22" transform="translate(5739.5,565)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L314,0C316.2,0,318,1.8,318,4L318,18C318,20.2,316.2,22,314,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="221" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(159,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="307" x="6">1 hàm không quá 5 tham số, thương dưới 3 tham số</tspan>
+        </text>
+    </g>
+    <g id="222" ed:width="130" ed:parentid="220" ed:height="22" transform="translate(5833.5,632)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L126,0C128.2,0,130,1.8,130,4L130,18C130,20.2,128.2,22,126,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="223" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(65,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="119" x="6">1 hàm chỉ làm 1 việc</tspan>
+        </text>
+    </g>
+    <g id="224" ed:width="144" ed:parentid="222" ed:height="22" transform="translate(5826.5,699)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L140,0C142.2,0,144,1.8,144,4L144,18C144,20.2,142.2,22,140,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="225" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(72,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="133" x="6">1 dòng chỉ chứa 1 biến</tspan>
+        </text>
+    </g>
+    <g id="226" ed:width="167" ed:parentid="224" ed:height="22" transform="translate(5815,766)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L163,0C165.2,0,167,1.8,167,4L167,18C167,20.2,165.2,22,163,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="227" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(83.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="156" x="6">1 dòng không quá 80 ký tự</tspan>
+        </text>
+    </g>
+    <g id="228" ed:width="217" ed:parentid="226" ed:height="22" transform="translate(5790,833)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L213,0C215.2,0,217,1.8,217,4L217,18C217,20.2,215.2,22,213,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="229" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(108.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="206" x="6">các câu lệnh lồng nhau tối đa 4 cấp</tspan>
+        </text>
+    </g>
+    <g id="230" ed:width="280" ed:parentid="200" ed:height="22" transform="translate(6072,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L276,0C278.2,0,280,1.8,280,4L280,18C280,20.2,278.2,22,276,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="231" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(140,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="269" x="6">Nếu có dấu phẩy thì xuống hàng sau dấu phẩy</tspan>
+        </text>
+    </g>
+    <g id="232" ed:width="161" ed:parentid="230" ed:height="22" transform="translate(6131.5,498)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L157,0C159.2,0,161,1.8,161,4L161,18C161,20.2,159.2,22,157,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="233" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(80.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="150" x="6">Xuống hàng trước toán tử</tspan>
+        </text>
+    </g>
+    <g id="234" ed:width="163" ed:parentid="232" ed:height="22" transform="translate(6130.5,565)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L159,0C161.2,0,163,1.8,163,4L163,18C163,20.2,161.2,22,159,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="235" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(81.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="152" x="6">Xuống hàng theo từng cấp</tspan>
+        </text>
+    </g>
+    <g id="236" ed:width="164" ed:parentid="234" ed:height="22" transform="translate(6130,632)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L160,0C162.2,0,164,1.8,164,4L164,18C164,20.2,162.2,22,160,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="237" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(82,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="153" x="6">Xuống hàng theo cùng bậc</tspan>
+        </text>
+    </g>
+    <g id="238" ed:width="255" ed:parentid="202" ed:height="22" transform="translate(6366.5,431)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L251,0C253.2,0,255,1.8,255,4L255,18C255,20.2,253.2,22,251,22L4,22C1.8,22,0,20.2,0,18L0,4C0,1.8,1.8,0,4,0z" stroke-linejoin="round"/>
+        <path stroke-linecap="round" fill="none" id="239" stroke="#faf4ea" d="M0,-22.5C0,-4.5,0,9,0,22.5" stroke-linejoin="round" transform="translate(127.5,-22.5)"/>
+        <text class="st2">
+            <tspan style="white-space:pre" y="15.5" lengthAdjust="spacing" textLength="244" x="6">Hạn chế dùng comment để giải thích code</tspan>
+        </text>
+    </g>
+    <g ed:layout="bottom" id="101" ed:width="275" ed:height="63" ed:topictype="mainidea" transform="translate(3248.75,153)">
+        <path fill="#308a8b" stroke="#faf4ea" d="M4,0L271,0C273.2,0,275,1.8,275,4L275,59C275,61.2,273.2,63,271,63L4,63C1.8,63,0,61.2,0,59L0,4C0,1.8,1.8,0,4,0z" stroke-width="3" stroke-linejoin="round"/>
+        <text class="st3">
+            <tspan style="white-space:pre" y="38.5" lengthAdjust="spacing" textLength="222" x="27">Tuần 3 ngày 24-28/3/2020</tspan>
+        </text>
+    </g>
+    <g ed:togtopicid="101" transform="translate(3380.25,217)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="102" transform="translate(962.5,320)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="104" transform="translate(2709,320)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="106" transform="translate(4436.25,320)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="108" transform="translate(454.5,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="110" transform="translate(1951,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="112" transform="translate(1082,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="114" transform="translate(1590,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="116" transform="translate(2270,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="118" transform="translate(3858,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="120" transform="translate(4255,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="122" transform="translate(4686.5,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="124" transform="translate(454.5,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="128" transform="translate(1082,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="136" transform="translate(1590,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="140" transform="translate(1951,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="144" transform="translate(2270,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="146" transform="translate(2270,521)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="150" transform="translate(2847.25,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="154" transform="translate(2713,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="156" transform="translate(3119.5,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="158" transform="translate(2713,521)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="160" transform="translate(3119.5,521)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="162" transform="translate(2713,588)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="164" transform="translate(2713,655)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="166" transform="translate(3858,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="170" transform="translate(4255,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="174" transform="translate(5095,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="176" transform="translate(4686.5,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="180" transform="translate(5095,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="184" transform="translate(3119.5,588)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="188" transform="translate(3434.5,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="190" transform="translate(3434.5,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="194" transform="translate(5940,320)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="196" transform="translate(5491.75,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="198" transform="translate(5892.5,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="200" transform="translate(6206,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="202" transform="translate(6488,387)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="204" transform="translate(5338,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="206" transform="translate(5338,521)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="210" transform="translate(5572.5,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="212" transform="translate(5572.5,521)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="216" transform="translate(5892.5,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="218" transform="translate(5892.5,521)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="220" transform="translate(5892.5,588)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="222" transform="translate(5892.5,655)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="224" transform="translate(5892.5,722)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="226" transform="translate(5892.5,789)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="230" transform="translate(6206,454)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="232" transform="translate(6206,521)">
+        <use xlink:href="#minus"/>
+    </g>
+    <g ed:togtopicid="234" transform="translate(6206,588)">
+        <use xlink:href="#minus"/>
+    </g>
+    <symbol id="plus">
+        <path fill="url(#lg1)" d="M11,6C11,8.8,8.8,11,6,11C3.2,11,1,8.8,1,6C1,3.2,3.2,1,6,1C8.8,1,11,3.2,11,6z"/>
+        <path fill="none" stroke="#46a000" d="M11,6C11,8.8,8.8,11,6,11C3.2,11,1,8.8,1,6C1,3.2,3.2,1,6,1C8.8,1,11,3.2,11,6zM3,6L9,6M6,3L6,9"/>
+    </symbol>
+    <symbol id="minus">
+        <path fill="url(#lg1)" d="M11,6C11,8.8,8.8,11,6,11C3.2,11,1,8.8,1,6C1,3.2,3.2,1,6,1C8.8,1,11,3.2,11,6z"/>
+        <path fill="none" stroke="#46a000" d="M11,6C11,8.8,8.8,11,6,11C3.2,11,1,8.8,1,6C1,3.2,3.2,1,6,1C8.8,1,11,3.2,11,6zM3,6L9,6"/>
+    </symbol>
+</svg>
+</div>
+        <div id="copyright">Created With  <a href="https://www.edrawsoft.com/" target="_blank" title="edrawsoft">MindMaster</a></div>
+      </div>
+    </div>
+    <script>eval(atob('dmFyIG11YT13aW5kb3cubmF2aWdhdG9yLnVzZXJBZ2VudDsNCnZhciB1YT0obXVhLmluZGV4T2YoJ3J2OjExJykrbXVhLmluZGV4T2YoJ01TSUUnKSk+PTA7DQpOdW1iZXIucHJvdG90eXBlLnRvc3VpdHN2Zz1mdW5jdGlvbiAoKSB7DQogICAgdmFyIG51bT10aGlzLnZhbHVlT2YoKTsNCiAgICBpZihudW0lMT09PTApew0KICAgICAgICByZXR1cm4gbnVtKzAuNQ0KICAgIH1lbHNlIHJldHVybiBudW07DQp9Ow0KTnVtYmVyLnByb3RvdHlwZS5wbHVzej1mdW5jdGlvbigpIHsNCiAgICB2YXIgbnVtPXRoaXMudmFsdWVPZigpOw0KICAgIHJldHVybiBudW08MTA/JzAnK251bTpudW07DQp9Ow0KZnVuY3Rpb24gcGFyc2VEYXRlKG51bSkgew0KICAgIHZhciBkYXRlID0gbmV3IERhdGUobnVtKTsNCiAgICB2YXIgWSA9IGRhdGUuZ2V0RnVsbFllYXIoKSArICctJzsNCiAgICB2YXIgTSA9IChkYXRlLmdldE1vbnRoKCkrMSkucGx1c3ooKSArICctJzsNCiAgICB2YXIgRCA9IGRhdGUuZ2V0RGF0ZSgpLnBsdXN6KCkgKyAnICc7DQogICAgdmFyIGggPSBkYXRlLmdldEhvdXJzKCkucGx1c3ooKSArICc6JzsNCiAgICB2YXIgbW0gPSBkYXRlLmdldE1pbnV0ZXMoKS5wbHVzeigpICsgJzonOw0KICAgIHZhciBzID0gZGF0ZS5nZXRTZWNvbmRzKCkucGx1c3ooKTsNCiAgICByZXR1cm4gWStNK0QraCttbStzOw0KfQ0KLy8tLXByZWRlZmluZWQNCi8vY29tbWVudC0tDQp2YXIgY29tbWVudHM9ZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnZz5nW2VkXFw6Y29tbWVudF0nKTsNCmZ1bmN0aW9uIGdldGN3aChwb3B1cCkgew0KICAgIGRvY3VtZW50LmJvZHkuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3N2ZycpWzBdLmFwcGVuZENoaWxkKHBvcHVwKTsNCiAgICB2YXIgdz1wb3B1cC5nZXRCb3VuZGluZ0NsaWVudFJlY3QoKS53aWR0aDsNCiAgICB2YXIgaD1wb3B1cC5nZXRCb3VuZGluZ0NsaWVudFJlY3QoKS5oZWlnaHQ7DQogICAgcmV0dXJuIFt3LGhdDQp9DQpmb3IodmFyIGk9MDtpPGNvbW1lbnRzLmxlbmd0aDtpKyspew0KICAgIHZhciBwb3B1cD1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywnZycpOw0KICAgIHZhciBob3Zlcj1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywncmVjdCcpOw0KICAgIHZhciBvbGluZT1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywncmVjdCcpOw0KICAgIGhvdmVyLnNldEF0dHJpYnV0ZSgnZmlsbCcsJyNjZGNkZmYnKTsNCiAgICBob3Zlci5zZXRBdHRyaWJ1dGUoJ3gnLCcwJyk7DQogICAgaG92ZXIuc2V0QXR0cmlidXRlKCd5JywnMCcpOw0KICAgIGhvdmVyLnNldEF0dHJpYnV0ZSgnaGVpZ2h0JywnMTYnKTsNCiAgICBob3Zlci5zZXRBdHRyaWJ1dGUoJ3dpZHRoJywnMTYnKTsNCiAgICBob3Zlci5zZXRBdHRyaWJ1dGUoJ2ZpbGwtb3BhY2l0eScsJzAuNicpOw0KICAgIGhvdmVyLnNldEF0dHJpYnV0ZSgndHJhbnNmb3JtJyxjb21tZW50c1tpXS5xdWVyeVNlbGVjdG9yKCd1c2UnKS5nZXRBdHRyaWJ1dGUoJ3RyYW5zZm9ybScpKTsNCiAgICBob3Zlci5zdHlsZS5kaXNwbGF5PSdub25lJzsNCiAgICBjb21tZW50c1tpXS5hcHBlbmRDaGlsZChob3Zlcik7DQogICAgdmFyIGE9SlNPTi5wYXJzZShjb21tZW50c1tpXS5nZXRBdHRyaWJ1dGUoJ2VkOmNvbW1lbnQnKSk7DQogICAgdmFyIGhlaWdodD0wOw0KICAgIHZhciBjYXJyPVtdOw0KICAgIGZvcih2YXIgaj0wO2o8YS5sZW5ndGg7aisrKXsNCiAgICAgICAgdmFyIHN0YW1wPU51bWJlcihhW2pdLkRhdGUpKjEwMDA7DQogICAgICAgIHZhciB0aW1lPXBhcnNlRGF0ZShzdGFtcCk7DQogICAgICAgIHZhciBuYW1lPWFbal0uTmFtZTsNCiAgICAgICAgdmFyIG1lc3NhZ2U9YVtqXS5NZXNzYWdlOw0KICAgICAgICB2YXIgbWVzc2FnZUFycj1tZXNzYWdlLnNwbGl0KC9cbi8pOw0KICAgICAgICB2YXIgbz1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywnZycpOw0KICAgICAgICB2YXIgbj1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywndGV4dCcpOw0KICAgICAgICB2YXIgdD1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywndGV4dCcpOw0KICAgICAgICB2YXIgbT1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywndGV4dCcpOw0KICAgICAgICBuLnNldEF0dHJpYnV0ZSgneCcsNSk7DQogICAgICAgIG4uc2V0QXR0cmlidXRlKCd5JywxMik7DQogICAgICAgIG4uc2V0QXR0cmlidXRlKCdmaWxsJywnIzAwNmVmZicpOw0KICAgICAgICBuLnRleHRDb250ZW50PW5hbWUrJ++8mic7DQogICAgICAgIG4uc2V0QXR0cmlidXRlKCdmb250LXNpemUnLCcxMicpOw0KICAgICAgICB0LnNldEF0dHJpYnV0ZSgneCcsMjAwKTsNCiAgICAgICAgdC5zZXRBdHRyaWJ1dGUoJ3knLDEyKTsNCiAgICAgICAgdC5zZXRBdHRyaWJ1dGUoJ2ZpbGwnLCcjOTY5Njk2Jyk7DQogICAgICAgIHQudGV4dENvbnRlbnQ9dGltZTsNCiAgICAgICAgdC5zZXRBdHRyaWJ1dGUoJ2ZvbnQtc2l6ZScsJzEwJyk7DQogICAgICAgIG0uc2V0QXR0cmlidXRlKCd0cmFuc2Zvcm0nLCd0cmFuc2xhdGUoMjAsMjcpJyk7DQogICAgICAgIG0uc2V0QXR0cmlidXRlKCdmb250LXNpemUnLCcxMicpOw0KICAgICAgICBmb3IodmFyIGs9MDtrPG1lc3NhZ2VBcnIubGVuZ3RoO2srKyl7DQogICAgICAgICAgICB2YXIgdHM9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudE5TKCdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycsJ3RzcGFuJyk7DQogICAgICAgICAgICB0cy5zZXRBdHRyaWJ1dGUoJ3gnLCcwJyk7DQogICAgICAgICAgICB0cy5zZXRBdHRyaWJ1dGUoJ3knLGsqMTYpOw0KICAgICAgICAgICAgdHMudGV4dENvbnRlbnQ9bWVzc2FnZUFycltrXTsNCiAgICAgICAgICAgIG0uYXBwZW5kQ2hpbGQodHMpOw0KICAgICAgICB9DQogICAgICAgIG8uc2V0QXR0cmlidXRlKCd0cmFuc2Zvcm0nLCd0cmFuc2xhdGUoMCwnK2hlaWdodCsnKScpOw0KICAgICAgICBvLmFwcGVuZENoaWxkKG4pOw0KICAgICAgICBvLmFwcGVuZENoaWxkKHQpOw0KICAgICAgICBvLmFwcGVuZENoaWxkKG0pOw0KICAgICAgICBjYXJyLnB1c2gobyk7DQogICAgICAgIHBvcHVwLmFwcGVuZENoaWxkKG8pOw0KICAgICAgICBoZWlnaHQ9KG1lc3NhZ2VBcnIubGVuZ3RoKzEpKjE2K2hlaWdodDsNCiAgICB9DQogICAgdmFyIHdhcnI9Z2V0Y3doKHBvcHVwKTsNCiAgICBvbGluZS5zZXRBdHRyaWJ1dGUoJ3gnLCcwJyk7DQogICAgb2xpbmUuc2V0QXR0cmlidXRlKCd5JywnMCcpOw0KICAgIHZhciBvdz13YXJyWzBdKzEwLjU7DQogICAgdmFyIG9oPXdhcnJbMV0rMzsNCiAgICBvbGluZS5zZXRBdHRyaWJ1dGUoJ3dpZHRoJyxvdyk7DQogICAgb2xpbmUuc2V0QXR0cmlidXRlKCdoZWlnaHQnLG9oKTsNCiAgICBvbGluZS5zZXRBdHRyaWJ1dGUoJ2ZpbGwnLCd3aGl0ZScpOw0KICAgIG9saW5lLnNldEF0dHJpYnV0ZSgnc3Ryb2tlJywnIzY1NjU2NScpOw0KICAgIHBvcHVwLmFwcGVuZENoaWxkKG9saW5lKTsNCiAgICB2YXIgbD1jYXJyLmxlbmd0aDsNCiAgICB3aGlsZShsLS0pew0KICAgICAgICBwb3B1cC5hcHBlbmRDaGlsZChjYXJyW2xdKTsNCiAgICB9DQogICAgcG9wdXAub25tb3VzZW92ZXI9ZnVuY3Rpb24gKCkgew0KICAgICAgICB0aGlzLnN0eWxlLmRpc3BsYXk9J2Jsb2NrJzsNCiAgICB9Ow0KICAgIHBvcHVwLm9ubW91c2VvdXQ9ZnVuY3Rpb24gKCkgew0KICAgICAgICB0aGlzLnN0eWxlLmRpc3BsYXkgPSAnbm9uZSc7DQogICAgfTsNCiAgICB2YXIgY3M9Y29tbWVudHNbaV0ucXVlcnlTZWxlY3RvcigndXNlJykuZ2V0QXR0cmlidXRlKCd0cmFuc2Zvcm0nKS5tYXRjaCgvXCgoXFMqfFxTKlxzXFMqKVwpLylbMV0uc3BsaXQoLyB8LC8pOw0KICAgIHZhciBwcz1jb21tZW50c1tpXS5wYXJlbnROb2RlLmdldEF0dHJpYnV0ZSgndHJhbnNmb3JtJykubWF0Y2goL1woKFxTKnxcUypcc1xTKilcKS8pWzFdLnNwbGl0KC8gfCwvKTsNCiAgICB2YXIgeD1wYXJzZUZsb2F0KGNzWzBdKStwYXJzZUZsb2F0KHBzWzBdKTsNCiAgICB2YXIgeT1wYXJzZUZsb2F0KHBzWzFdKTsNCiAgICB4PXgudG9zdWl0c3ZnKCk7DQogICAgeT15LnRvc3VpdHN2ZygpOw0KICAgIHBvcHVwLnNldEF0dHJpYnV0ZSgndHJhbnNmb3JtJywndHJhbnNsYXRlKCcreCsnLCcreSsnKScpOw0KICAgIHBvcHVwLnNldEF0dHJpYnV0ZSgnY29tbWVudCcsJycpOw0KICAgIHBvcHVwLnN0eWxlLmRpc3BsYXk9J25vbmUnOw0KICAgIHBvcHVwLnNldEF0dHJpYnV0ZSgnZWQ6Y29tbWVudGlkJyxjb21tZW50c1tpXS5wYXJlbnROb2RlLmlkKTsNCiAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcjc3ZnLWNvbnRhaW5lciA+IHN2ZycpLmFwcGVuZENoaWxkKHBvcHVwKTsNCiAgICBjb21tZW50c1tpXS5vbm1vdXNlb3Zlcj1mdW5jdGlvbiAoKSB7DQogICAgICAgIHZhciBjb21tZW50aWQ9dGhpcy5wYXJlbnROb2RlLmlkOw0KICAgICAgICB0aGlzLnF1ZXJ5U2VsZWN0b3IoJ3JlY3QnKS5zdHlsZS5kaXNwbGF5PSdibG9jayc7DQogICAgICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoImdbZWRcXDpjb21tZW50aWQ9JyIrY29tbWVudGlkKyInXVtjb21tZW50XSIpLnN0eWxlLmRpc3BsYXk9J2Jsb2NrJzsNCiAgICB9Ow0KICAgIGNvbW1lbnRzW2ldLm9ubW91c2VvdXQ9ZnVuY3Rpb24gKCkgew0KICAgICAgICB2YXIgY29tbWVudGlkPXRoaXMucGFyZW50Tm9kZS5pZDsNCi8vICAgICAgICB3aW5kb3cuZ2V0U2VsZWN0aW9uKCkucmVtb3ZlQWxsUmFuZ2VzKCk7DQogICAgICAgIHRoaXMucXVlcnlTZWxlY3RvcigncmVjdCcpLnN0eWxlLmRpc3BsYXk9J25vbmUnOw0KICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCJnW2VkXFw6Y29tbWVudGlkPSciK2NvbW1lbnRpZCsiJ11bY29tbWVudF0iKS5zdHlsZS5kaXNwbGF5PSdub25lJzsNCiAgICB9DQp9DQovLy0tY29tbWVudA0KLy9ub3RlLS0NCmlmKCF1YSl7DQogICAgdmFyIG5vdGVzPWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoJ2c+Z1tlZFxcOm5vdGVdJyk7DQogICAgZnVuY3Rpb24gZ2V0d2gocyxwKSB7DQogICAgICAgIHZhciBtYWlucD1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCdkaXYnKTsNCiAgICAgICAgbWFpbnAuc3R5bGUuY3NzVGV4dD1zOw0KICAgICAgICBtYWlucC5zdHlsZS5kaXNwbGF5PSdpbmxpbmUtYmxvY2snOw0KICAgICAgICBtYWlucC5pbm5lckhUTUw9cDsNCiAgICAgICAgZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChtYWlucCk7DQogICAgICAgIHZhciB3PW1haW5wLmNsaWVudFdpZHRoOw0KICAgICAgICB2YXIgaD1tYWlucC5jbGllbnRIZWlnaHQ7DQogICAgICAgIGRvY3VtZW50LmJvZHkucmVtb3ZlQ2hpbGQobWFpbnApOw0KICAgICAgICByZXR1cm4gW3csaF0NCiAgICB9DQogICAgZm9yKHZhciBpPTA7aTxub3Rlcy5sZW5ndGg7aSsrKXsNCiAgICAgICAgdmFyIGE9bm90ZXNbaV0uZ2V0QXR0cmlidXRlKCdlZDpub3RlJyk7DQogICAgICAgIHZhciBtYWlucD1hLm1hdGNoKC88cChbXFNcc10qKTxcL3A+L2cpWzBdOw0KICAgICAgICB2YXIgbWFpbnM9YS5tYXRjaCgvc3R5bGU9IiguKj8pIi8pWzFdOw0KICAgICAgICB2YXIgb3V0PWRvY3VtZW50LmNyZWF0ZUVsZW1lbnROUygnaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnLCdnJyk7DQogICAgICAgIHZhciBvbGluZT1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywncmVjdCcpOw0KICAgICAgICB2YXIgcG9wdXA9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudE5TKCdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycsJ2ZvcmVpZ25PYmplY3QnKTsNCiAgICAgICAgdmFyIGhvdmVyPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnROUygnaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnLCdyZWN0Jyk7DQogICAgICAgIGhvdmVyLnNldEF0dHJpYnV0ZSgnZmlsbCcsJyNjZGNkZmYnKTsNCiAgICAgICAgaG92ZXIuc2V0QXR0cmlidXRlKCd4JywnMCcpOw0KICAgICAgICBob3Zlci5zZXRBdHRyaWJ1dGUoJ3knLCcwJyk7DQogICAgICAgIGhvdmVyLnNldEF0dHJpYnV0ZSgnaGVpZ2h0JywnMTYnKTsNCiAgICAgICAgaG92ZXIuc2V0QXR0cmlidXRlKCd3aWR0aCcsJzE2Jyk7DQogICAgICAgIGhvdmVyLnNldEF0dHJpYnV0ZSgnZmlsbC1vcGFjaXR5JywnMC42Jyk7DQogICAgICAgIGhvdmVyLnNldEF0dHJpYnV0ZSgndHJhbnNmb3JtJyxub3Rlc1tpXS5xdWVyeVNlbGVjdG9yKCd1c2UnKS5nZXRBdHRyaWJ1dGUoJ3RyYW5zZm9ybScpKTsNCiAgICAgICAgaG92ZXIuc3R5bGUuZGlzcGxheT0nbm9uZSc7DQogICAgICAgIG5vdGVzW2ldLmFwcGVuZENoaWxkKGhvdmVyKTsNCiAgICAgICAgcG9wdXAuc3R5bGUuY3NzVGV4dD1tYWluczsNCiAgICAgICAgcG9wdXAuaW5uZXJIVE1MPW1haW5wOw0KICAgICAgICB2YXIgd2g9Z2V0d2gobWFpbnMsbWFpbnApOw0KICAgICAgICBwb3B1cC5zZXRBdHRyaWJ1dGUoJ3dpZHRoJyx3aFswXSsxNik7DQogICAgICAgIHBvcHVwLnNldEF0dHJpYnV0ZSgnaGVpZ2h0Jyx3aFsxXSs4KTsNCiAgICAgICAgcG9wdXAuc2V0QXR0cmlidXRlKCd0cmFuc2Zvcm0nLCd0cmFuc2xhdGUoOCw0KScpOw0KICAgICAgICBwb3B1cC5zdHlsZS50ZXh0QWxpZ249J2xlZnQnOw0KICAgICAgICBvbGluZS5zZXRBdHRyaWJ1dGUoJ3gnLCcwJyk7DQogICAgICAgIG9saW5lLnNldEF0dHJpYnV0ZSgneScsJzAnKTsNCiAgICAgICAgb2xpbmUuc2V0QXR0cmlidXRlKCd3aWR0aCcsd2hbMF0rMTYpOw0KICAgICAgICBvbGluZS5zZXRBdHRyaWJ1dGUoJ2hlaWdodCcsd2hbMV0rOCk7DQogICAgICAgIG9saW5lLnNldEF0dHJpYnV0ZSgnc3Ryb2tlJywnI2EyN2EwMCcpOw0KICAgICAgICBvbGluZS5zZXRBdHRyaWJ1dGUoJ2ZpbGwnLCcjZmZlNzlkJyk7DQogICAgICAgIG91dC5hcHBlbmRDaGlsZChvbGluZSk7DQogICAgICAgIG91dC5hcHBlbmRDaGlsZChwb3B1cCk7DQogICAgICAgIG91dC5zZXRBdHRyaWJ1dGUoJ25vdGUnLCcnKTsNCiAgICAgICAgb3V0LnN0eWxlLmRpc3BsYXk9J25vbmUnOw0KICAgICAgICBvdXQuc2V0QXR0cmlidXRlKCdlZDpub3RlaWQnLG5vdGVzW2ldLnBhcmVudE5vZGUuaWQpOw0KICAgICAgICBvdXQub25tb3VzZW92ZXI9ZnVuY3Rpb24gKCkgew0KICAgICAgICAgICAgdGhpcy5zdHlsZS5kaXNwbGF5PSdibG9jayc7DQogICAgICAgIH07DQogICAgICAgIG91dC5vbm1vdXNlb3V0PWZ1bmN0aW9uICgpIHsNCi8vICAgICAgICB3aW5kb3cuZ2V0U2VsZWN0aW9uID8gd2luZG93LmdldFNlbGVjdGlvbigpLnJlbW92ZVJhbmdlKHdpbmRvdy5nZXRTZWxlY3Rpb24oKS5yZSk6ZG9jdW1lbnQuc2VsZWN0aW9uLmVtcHR5KCk7DQoNCiAgICAgICAgICAgIHRoaXMuc3R5bGUuZGlzcGxheT0nbm9uZSc7DQogICAgICAgIH07DQogICAgICAgIHZhciBjcz1ub3Rlc1tpXS5xdWVyeVNlbGVjdG9yKCd1c2UnKS5nZXRBdHRyaWJ1dGUoJ3RyYW5zZm9ybScpLm1hdGNoKC9cKChcUyp8XFMqXHNcUyopXCkvKVsxXS5zcGxpdCgvIHwsLyk7DQogICAgICAgIHZhciBwcz1ub3Rlc1tpXS5wYXJlbnROb2RlLmdldEF0dHJpYnV0ZSgndHJhbnNmb3JtJykubWF0Y2goL1woKFxTKnxcUypcc1xTKilcKS8pWzFdLnNwbGl0KC8gfCwvKTsNCiAgICAgICAgdmFyIHg9cGFyc2VGbG9hdChjc1swXSkrcGFyc2VGbG9hdChwc1swXSk7DQogICAgICAgIHZhciB5PXBhcnNlRmxvYXQocHNbMV0pOw0KICAgICAgICB4PXgudG9zdWl0c3ZnKCk7DQogICAgICAgIHk9eS50b3N1aXRzdmcoKTsNCiAgICAgICAgb3V0LnNldEF0dHJpYnV0ZSgndHJhbnNmb3JtJywndHJhbnNsYXRlKCcreCsnLCcreSsnKScpOw0KICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcjc3ZnLWNvbnRhaW5lciA+IHN2ZycpLmFwcGVuZENoaWxkKG91dCk7DQogICAgICAgIG5vdGVzW2ldLm9ubW91c2VvdmVyPWZ1bmN0aW9uICgpIHsNCiAgICAgICAgICAgIHZhciBub3RlaWQ9dGhpcy5wYXJlbnROb2RlLmlkOw0KICAgICAgICAgICAgdGhpcy5xdWVyeVNlbGVjdG9yKCdyZWN0Jykuc3R5bGUuZGlzcGxheT0nYmxvY2snOw0KICAgICAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiZ1tlZFxcOm5vdGVpZD0nIitub3RlaWQrIiddW25vdGVdIikuc3R5bGUuZGlzcGxheT0nYmxvY2snOw0KICAgICAgICB9Ow0KICAgICAgICBub3Rlc1tpXS5vbm1vdXNlb3V0PWZ1bmN0aW9uICgpIHsNCiAgICAgICAgICAgIHZhciBub3RlaWQ9dGhpcy5wYXJlbnROb2RlLmlkOw0KLy8gICAgICAgIHdpbmRvdy5nZXRTZWxlY3Rpb24oKS5yZW1vdmVBbGxSYW5nZXMoKTsNCiAgICAgICAgICAgIHRoaXMucXVlcnlTZWxlY3RvcigncmVjdCcpLnN0eWxlLmRpc3BsYXk9J25vbmUnOw0KICAgICAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiZ1tlZFxcOm5vdGVpZD0nIitub3RlaWQrIiddW25vdGVdIikuc3R5bGUuZGlzcGxheT0nbm9uZSc7DQogICAgICAgIH0NCiAgICB9DQp9ZWxzZXsNCiAgICBjb25zb2xlLmxvZygn5oqx5q2J77yMSUXmtY/op4jlmajkuI3mlK/mjIFub3Rl6Kej5p6Q77yM6K+35L2/55So5YW25LuW5YaF5qC45rWP6KeI5Zmo44CC6LCi6LCi77yBJykNCn0NCi8vLS1ub3RlDQovL2h5cGVybGluay0tDQp2YXIgbGlua3M9ZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnZz5nW2VkXFw6aHlwZXJsaW5rXScpOw0KZnVuY3Rpb24gZ2V0bWF4bGVuKGFycixicnIpIHsNCiAgICB2YXIgbD0wOw0KICAgIHZhciBsbD0wOw0KICAgIGZvcih2YXIgaj0wO2o8YXJyLmxlbmd0aDtqKyspew0KICAgICAgICB2YXIgZT1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywndGV4dCcpOw0KICAgICAgICBpZighaXNOYU4obGlua2FycltqXSkpew0KICAgICAgICAgICAgZS50ZXh0Q29udGVudD0nUGFnZS0nK2FycltqXTsNCiAgICAgICAgfWVsc2V7DQogICAgICAgICAgICBlLnRleHRDb250ZW50PWFycltqXTsNCiAgICAgICAgfQ0KICAgICAgICBlLnN0eWxlLmZvbnRTaXplPScxMnB4JzsNCiAgICAgICAgZG9jdW1lbnQuYm9keS5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc3ZnJylbMF0uYXBwZW5kQ2hpbGQoZSk7DQogICAgICAgIHZhciBldz1lLmdldEJCb3goKS53aWR0aDsNCiAgICAgICAgZG9jdW1lbnQuYm9keS5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc3ZnJylbMF0ucmVtb3ZlQ2hpbGQoZSk7DQogICAgICAgIHZhciBoPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnROUygnaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnLCd0ZXh0Jyk7DQogICAgICAgIGgudGV4dENvbnRlbnQ9YnJyW2pdOw0KICAgICAgICBoLnN0eWxlLmZvbnRTaXplPScxMnB4JzsNCiAgICAgICAgaC5zdHlsZS5mb250V2VpZ2h0PSdib2xkJzsNCiAgICAgICAgZG9jdW1lbnQuYm9keS5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc3ZnJylbMF0uYXBwZW5kQ2hpbGQoaCk7DQogICAgICAgIHZhciBodz1oLmdldEJCb3goKS53aWR0aDsNCiAgICAgICAgZG9jdW1lbnQuYm9keS5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc3ZnJylbMF0ucmVtb3ZlQ2hpbGQoaCk7DQogICAgICAgIGw9ZXc+aHc/ZXc6aHc7DQogICAgICAgIGxsPWw+bGw/bDpsbDsNCiAgICB9DQogICAgcmV0dXJuIGxsOw0KfQ0KZm9yKHZhciBpPTA7aTxsaW5rcy5sZW5ndGg7aSsrKXsNCiAgICB2YXIgcG9wdXA9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudE5TKCdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycsJ2cnKTsNCiAgICB2YXIgaG92ZXI9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudE5TKCdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycsJ3JlY3QnKTsNCiAgICB2YXIgZGVzY2Fycj1bXTsNCiAgICB2YXIgbGlua2Fycj1bXTsNCiAgICBob3Zlci5zZXRBdHRyaWJ1dGUoJ2ZpbGwnLCcjY2RjZGZmJyk7DQogICAgaG92ZXIuc2V0QXR0cmlidXRlKCd4JywnMCcpOw0KICAgIGhvdmVyLnNldEF0dHJpYnV0ZSgneScsJzAnKTsNCiAgICBob3Zlci5zZXRBdHRyaWJ1dGUoJ2hlaWdodCcsJzE2Jyk7DQogICAgaG92ZXIuc2V0QXR0cmlidXRlKCd3aWR0aCcsJzE2Jyk7DQogICAgaG92ZXIuc2V0QXR0cmlidXRlKCdmaWxsLW9wYWNpdHknLCcwLjYnKTsNCiAgICBob3Zlci5zZXRBdHRyaWJ1dGUoJ3RyYW5zZm9ybScsbGlua3NbaV0ucXVlcnlTZWxlY3RvcigndXNlJykuZ2V0QXR0cmlidXRlKCd0cmFuc2Zvcm0nKSk7DQogICAgaG92ZXIuc3R5bGUuZGlzcGxheT0nbm9uZSc7DQogICAgbGlua3NbaV0uYXBwZW5kQ2hpbGQoaG92ZXIpOw0KICAgIC8vIGNvbnNvbGUubG9nKGxpbmtzW2ldLmdldEF0dHJpYnV0ZSgnZWQ6aHlwZXJsaW5rJykpOw0KICAgIHZhciBhPUpTT04ucGFyc2UobGlua3NbaV0uZ2V0QXR0cmlidXRlKCdlZDpoeXBlcmxpbmsnKSk7DQogICAgdmFyIGNzPWxpbmtzW2ldLnF1ZXJ5U2VsZWN0b3IoJ3VzZScpLmdldEF0dHJpYnV0ZSgndHJhbnNmb3JtJykubWF0Y2goL1woKFxTKnxcUypcc1xTKilcKS8pWzFdLnNwbGl0KC8gfCwvKTsNCiAgICB2YXIgcHM9bGlua3NbaV0ucGFyZW50Tm9kZS5nZXRBdHRyaWJ1dGUoJ3RyYW5zZm9ybScpLm1hdGNoKC9cKChcUyp8XFMqXHNcUyopXCkvKVsxXS5zcGxpdCgvIHwsLyk7DQogICAgdmFyIHg9cGFyc2VGbG9hdChjc1swXSkrcGFyc2VGbG9hdChwc1swXSk7DQogICAgdmFyIHk9cGFyc2VGbG9hdChwc1sxXSk7DQogICAgeD14LnRvc3VpdHN2ZygpOw0KICAgIHk9eS50b3N1aXRzdmcoKTsNCiAgICB2YXIgYWw9YS5sZW5ndGg7DQogICAgZm9yKHZhciBqPTA7ajxhbDtqKyspew0KICAgICAgICBsaW5rYXJyLnB1c2goYVtqXS5saW5rKTsNCiAgICAgICAgZGVzY2Fyci5wdXNoKGFbal0uZGVzYyk7DQogICAgfQ0KICAgIHBvcHVwLnNldEF0dHJpYnV0ZSgndHJhbnNmb3JtJywndHJhbnNsYXRlKCcreCsnLCcreSsnKScpOw0KICAgIHZhciBtYXg9Z2V0bWF4bGVuKGxpbmthcnIsZGVzY2Fycik7DQogICAgZm9yKHZhciBrPTA7azxhbDtrKyspew0KICAgICAgICB2YXIgYz1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywnYScpOw0KICAgICAgICB2YXIgZD1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywncmVjdCcpOw0KICAgICAgICB2YXIgZT1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywndGV4dCcpOw0KICAgICAgICB2YXIgZj1kb2N1bWVudC5jcmVhdGVFbGVtZW50TlMoJ2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJywndGV4dCcpOw0KICAgICAgICBpZihpc05hTihsaW5rYXJyW2tdKSl7DQogICAgICAgICAgICBjLnNldEF0dHJpYnV0ZSgnaHJlZicsbGlua2FycltrXSk7DQogICAgICAgICAgICBjLnNldEF0dHJpYnV0ZSgndGFyZ2V0JywnX2JsYW5rJyk7DQogICAgICAgICAgICBlLnRleHRDb250ZW50PWxpbmthcnJba107DQogICAgICAgIH1lbHNlew0KICAgICAgICAgICAgZS50ZXh0Q29udGVudD0nUGFnZS0nK2xpbmthcnJba107DQogICAgICAgICAgICBjLnNldEF0dHJpYnV0ZSgnaHJlZicsJyMnK2xpbmthcnJba10pOw0KICAgICAgICB9DQogICAgICAgIGQuc2V0QXR0cmlidXRlKCd3aWR0aCcsbWF4KzEwKTsNCiAgICAgICAgZC5zZXRBdHRyaWJ1dGUoJ2hlaWdodCcsJzMzJyk7DQogICAgICAgIGQuc2V0QXR0cmlidXRlKCdzdHJva2UnLCcjOTk5OTk5Jyk7DQogICAgICAgIGQuc2V0QXR0cmlidXRlKCdmaWxsJywnd2hpdGUnKTsNCiAgICAgICAgZC5zZXRBdHRyaWJ1dGUoJ3knLDMzKmspOw0KICAgICAgICBmLnRleHRDb250ZW50PWRlc2NhcnJba107DQogICAgICAgIGYuc3R5bGUuZm9udFNpemU9JzEycHgnOw0KICAgICAgICBmLnN0eWxlLmZvbnRXZWlnaHQ9J2JvbGQnOw0KICAgICAgICBmLnNldEF0dHJpYnV0ZSgneCcsNSk7DQogICAgICAgIGYuc2V0QXR0cmlidXRlKCd5JywzMyprKzEyKTsNCiAgICAgICAgZS5zdHlsZS5mb250U2l6ZT0nMTJweCc7DQogICAgICAgIGUuc2V0QXR0cmlidXRlKCd5JywzMyprKzI4KTsNCiAgICAgICAgZS5zZXRBdHRyaWJ1dGUoJ3gnLDUpOw0KICAgICAgICBjLmFwcGVuZENoaWxkKGQpOw0KICAgICAgICBjLmFwcGVuZENoaWxkKGYpOw0KICAgICAgICBjLmFwcGVuZENoaWxkKGUpOw0KICAgICAgICBjLm9ubW91c2VvdmVyPWZ1bmN0aW9uICgpIHsNCiAgICAgICAgICAgIHRoaXMucXVlcnlTZWxlY3RvcigncmVjdCcpLnN0eWxlLmZpbGw9JyNlMWUxZmYnDQogICAgICAgIH07DQogICAgICAgIGMub25tb3VzZW91dD1mdW5jdGlvbiAoKSB7DQogICAgICAgICAgICB0aGlzLnF1ZXJ5U2VsZWN0b3IoJ3JlY3QnKS5zdHlsZS5maWxsPSd3aGl0ZScNCiAgICAgICAgfTsNCiAgICAgICAgcG9wdXAuYXBwZW5kQ2hpbGQoYyk7DQogICAgfQ0KICAgIHBvcHVwLnN0eWxlLmRpc3BsYXk9J25vbmUnOw0KICAgIHBvcHVwLnNldEF0dHJpYnV0ZSgnaHlwZXJsaW5rJywnJyk7DQogICAgcG9wdXAuc2V0QXR0cmlidXRlKCdlZDpsaW5raWQnLGxpbmtzW2ldLnBhcmVudE5vZGUuaWQpOw0KICAgIHBvcHVwLm9ubW91c2VvdmVyPWZ1bmN0aW9uICgpIHsNCiAgICAgICAgdGhpcy5zdHlsZS5kaXNwbGF5PSdibG9jayc7DQogICAgfTsNCiAgICBwb3B1cC5vbmNsaWNrPWZ1bmN0aW9uICgpIHsNCiAgICAgICAgdGhpcy5zdHlsZS5kaXNwbGF5PSdub25lJzsNCiAgICB9Ow0KICAgIHBvcHVwLm9ubW91c2VvdXQ9ZnVuY3Rpb24gKCkgew0KICAgICAgICB0aGlzLnN0eWxlLmRpc3BsYXk9J25vbmUnOw0KICAgIH07DQogICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI3N2Zy1jb250YWluZXIgPiBzdmcnKS5hcHBlbmRDaGlsZChwb3B1cCk7DQogICAgbGlua3NbaV0ub25tb3VzZW92ZXI9ZnVuY3Rpb24gKCkgew0KICAgICAgICB2YXIgbGlua2lkPXRoaXMucGFyZW50Tm9kZS5pZDsNCiAgICAgICAgdGhpcy5xdWVyeVNlbGVjdG9yKCdyZWN0Jykuc3R5bGUuZGlzcGxheT0nYmxvY2snOw0KICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCJnW2VkXFw6bGlua2lkPSciK2xpbmtpZCsiJ11baHlwZXJsaW5rXSIpLnN0eWxlLmRpc3BsYXk9J2Jsb2NrJzsNCiAgICB9DQogICAgbGlua3NbaV0ub25tb3VzZW91dD1mdW5jdGlvbiAoKSB7DQogICAgICAgIHZhciBsaW5raWQ9dGhpcy5wYXJlbnROb2RlLmlkOw0KICAgICAgICB0aGlzLnF1ZXJ5U2VsZWN0b3IoJ3JlY3QnKS5zdHlsZS5kaXNwbGF5PSdub25lJzsNCiAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiZ1tlZFxcOmxpbmtpZD0nIitsaW5raWQrIiddW2h5cGVybGlua10iKS5zdHlsZS5kaXNwbGF5PSdub25lJzsNCiAgICB9DQp9DQovLy0taHlwZXJsaW5rDQovL2luaXRpYWxpemUtLQ0KdmFyIHNoYXBlPWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoJ2dbZWRcXDp0b2d0b3BpY2lkXScpOw0KdmFyIG1JZD1kb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCdnW2VkXFw6dG9waWN0eXBlXScpOw0KdmFyIGRhdGFUcmVlPXt9Ow0KdmFyIGV4dHJhUmVsYT17fTsNCnZhciBjaGVja0lEPScnOw0KZm9yKHZhciBpPTA7aTxtSWQubGVuZ3RoO2krKyl7DQogICAgdmFyIHR5cGU9bUlkW2ldLmdldEF0dHJpYnV0ZSgnZWQ6dG9waWN0eXBlJyk7DQogICAgdmFyIHNpZD1tSWRbaV0uaWQ7DQogICAgaWYodHlwZSE9PSdjYWxsb3V0Jyl7DQogICAgICAgIGluaXQoc2lkLGRhdGFUcmVlKQ0KICAgIH0NCn0NCmZ1bmN0aW9uIGluaXQoaWQsIG9iaikgew0KICAgIHZhciBjaGlsZHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCJnW2VkXFw6cGFyZW50aWQ9JyIgKyBpZCArICInXTpub3QoW2VkXFw6dG9waWN0eXBlXSkiKTsNCiAgICB2YXIgY2FsbHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCJnW2VkXFw6cGFyZW50aWQ9JyIgKyBpZCArICInXVtlZFxcOnRvcGljdHlwZV0iKTsNCiAgICB2YXIgc3VtbWFyeSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoInBhdGhbZWRcXDpwYXJlbnRpZCo9JyIgKyBpZCArICInXVtlZFxcOnR5cGU9J3N1bW1hcnknXSIpOw0KICAgIHZhciBib3VuZGFyeT0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgicGF0aFtlZFxcOnBhcmVudGlkKj0nIiArIGlkICsgIiddW2VkXFw6dHlwZT0nYm91bmRhcnknXSIpOw0KICAgIHZhciByZWxhZnJvbT1kb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCJnW2VkXFw6ZnJvbWlkKj0nIiArIGlkICsgIiddW2VkXFw6dHlwZT0ncmVsYXRpb24nXSIpOw0KICAgIHZhciByZWxhdG89ZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgiZ1tlZFxcOnRvaWQqPSciICsgaWQgKyAiJ11bZWRcXDp0eXBlPSdyZWxhdGlvbiddIik7DQogICAgb2JqWyJtIiArIGlkXSA9IHt9Ow0KICAgIHZhciB0eXBlID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoaWQpLmdldEF0dHJpYnV0ZSgnZWQ6dG9waWN0eXBlJyk7DQogICAgdmFyIGl3PWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGlkKS5nZXRBdHRyaWJ1dGUoJ2VkOndpZHRoJyk7DQogICAgdmFyIGloPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGlkKS5nZXRBdHRyaWJ1dGUoJ2VkOmhlaWdodCcpOw0KICAgIGlmICh0eXBlKSB7DQogICAgICAgIG9ialsibSIgKyBpZF0udHlwZSA9IHR5cGU7DQogICAgfQ0KICAgIGlmKGl3JiZpaCl7DQogICAgICAgIG9ialsibSIgKyBpZF0ud2lkdGggPWl3Ow0KICAgICAgICBvYmpbIm0iICsgaWRdLmhlaWdodCA9aWg7DQogICAgfQ0KICAgIGlmIChyZWxhZnJvbS5sZW5ndGggIT09IDApIHsNCiAgICAgICAgb2JqWyJtIiArIGlkXS5yZWxhZnJvbSA9IHt9Ow0KICAgICAgICBmb3IgKHZhciBpID0gMDsgaSA8IHJlbGFmcm9tLmxlbmd0aDsgaSsrKSB7DQogICAgICAgICAgICB2YXIgaW5kZXhpZCA9IHJlbGFmcm9tW2ldLmlkOw0KICAgICAgICAgICAgdmFyIHRvaWQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChpbmRleGlkKS5nZXRBdHRyaWJ1dGUoJ2VkOnRvaWQnKTsNCiAgICAgICAgICAgIGlmIChleHRyYVJlbGFbaW5kZXhpZF0gPT09IHVuZGVmaW5lZCkgew0KICAgICAgICAgICAgICAgIGV4dHJhUmVsYVtpbmRleGlkXSA9IHsNCiAgICAgICAgICAgICAgICAgICAgaWQ6IGluZGV4aWQsDQogICAgICAgICAgICAgICAgICAgIGZyb21pZDogaWQsDQogICAgICAgICAgICAgICAgICAgIHRvaWQ6IHRvaWQsDQogICAgICAgICAgICAgICAgICAgIGlzQzogZmFsc2UNCiAgICAgICAgICAgICAgICB9Ow0KICAgICAgICAgICAgfQ0KICAgICAgICAgICAgb2JqWyJtIiArIGlkXS5yZWxhZnJvbVtpbmRleGlkXT17fTsNCiAgICAgICAgICAgIG9ialsibSIgKyBpZF0ucmVsYWZyb20uZGlzcGxheT1kb2N1bWVudC5nZXRFbGVtZW50QnlJZChpZCkuc3R5bGUuZGlzcGxheSAhPT0gJ25vbmUnPydibG9jayc6J25vbmUnOw0KICAgICAgICB9DQogICAgfQ0KICAgIGlmIChyZWxhdG8ubGVuZ3RoICE9PSAwKSB7DQogICAgICAgIG9ialsibSIgKyBpZF0ucmVsYXRvID0ge307DQogICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDwgcmVsYXRvLmxlbmd0aDsgaSsrKSB7DQogICAgICAgICAgICB2YXIgaW5kZXhpZD1yZWxhdG9baV0uaWQ7DQogICAgICAgICAgICB2YXIgZnJvbWlkPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGluZGV4aWQpLmdldEF0dHJpYnV0ZSgnZWQ6ZnJvbWlkJyk7DQogICAgICAgICAgICBpZihleHRyYVJlbGFbaW5kZXhpZF0gPT09IHVuZGVmaW5lZCl7DQogICAgICAgICAgICAgICAgZXh0cmFSZWxhW2luZGV4aWRdPXsNCiAgICAgICAgICAgICAgICAgICAgaWQ6aW5kZXhpZCwNCiAgICAgICAgICAgICAgICAgICAgZnJvbWlkOmZyb21pZCwNCiAgICAgICAgICAgICAgICAgICAgdG9pZDppZCwNCiAgICAgICAgICAgICAgICAgICAgaXNDOmZhbHNlDQogICAgICAgICAgICAgICAgfTsNCiAgICAgICAgICAgIH0NCiAgICAgICAgICAgIG9ialsibSIgKyBpZF0ucmVsYXRvW2luZGV4aWRdPXt9Ow0KICAgICAgICAgICAgb2JqWyJtIiArIGlkXS5yZWxhdG8uZGlzcGxheT1kb2N1bWVudC5nZXRFbGVtZW50QnlJZChpZCkuc3R5bGUuZGlzcGxheSAhPT0gJ25vbmUnPydibG9jayc6J25vbmUnOw0KICAgICAgICB9DQogICAgfQ0KICAgIGlmIChjaGlsZHMubGVuZ3RoICE9PSAwKSB7DQogICAgICAgIG9ialsibSIgKyBpZF0uY2hpbGQgPSB7fTsNCiAgICAgICAgaWYgKGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoImdbZWRcXDp0b2d0b3BpY2lkPSciICsgaWQgKyAiJ10iKSkgew0KICAgICAgICAgICAgLy8gY29uc29sZS5sb2coZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiZ1tlZFxcOnRvZ3RvcGljaWQ9JyIgKyBpZCArICInXSIpLmNoaWxkTm9kZXNbMF0uZ2V0QXR0cmlidXRlKCd4bGluazpocmVmJykpOw0KICAgICAgICAgICAgdmFyIHRvZyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoImdbZWRcXDp0b2d0b3BpY2lkPSciICsgaWQgKyAiJ10iKS5jaGlsZHJlblswXS5nZXRBdHRyaWJ1dGUoJ3hsaW5rOmhyZWYnKS5zbGljZSgxKTsNCiAgICAgICAgICAgIG9ialsibSIgKyBpZF0udG9ndHlwZSA9IHRvZzsNCiAgICAgICAgfQ0KICAgICAgICBmb3IgKHZhciBpID0gMDsgaSA8IGNoaWxkcy5sZW5ndGg7IGkrKykgew0KICAgICAgICAgICAgdmFyIGNpZCA9IGNoaWxkc1tpXS5pZDsNCiAgICAgICAgICAgIGluaXQoY2lkLCBvYmpbIm0iICsgaWRdLmNoaWxkKTsNCiAgICAgICAgfQ0KICAgIH0NCiAgICBpZiAoY2FsbHMubGVuZ3RoICE9PSAwKSB7DQogICAgICAgIG9ialsibSIgKyBpZF0uY2FsbCA9IHt9Ow0KICAgICAgICBmb3IgKHZhciBpID0gMDsgaSA8IGNhbGxzLmxlbmd0aDsgaSsrKSB7DQogICAgICAgICAgICB2YXIgY2lkID0gY2FsbHNbaV0uaWQ7DQogICAgICAgICAgICBpbml0KGNpZCwgb2JqWyJtIiArIGlkXS5jYWxsKTsNCiAgICAgICAgfQ0KICAgIH0NCiAgICBpZiAoYm91bmRhcnkubGVuZ3RoICE9PSAwKSB7DQogICAgICAgIG9ialsibSIgKyBpZF0uYm91bmRhcnkgPSB7fTsNCiAgICAgICAgZm9yICh2YXIgaSA9IDA7IGkgPCBib3VuZGFyeS5sZW5ndGg7IGkrKykgew0KICAgICAgICAgICAgdmFyIGNpZCA9Ym91bmRhcnlbaV0uaWQ7DQogICAgICAgICAgICBpbml0KGNpZCwgb2JqWyJtIiArIGlkXS5ib3VuZGFyeSk7DQogICAgICAgIH0NCiAgICB9DQogICAgaWYgKHN1bW1hcnkubGVuZ3RoICE9PSAwKSB7DQogICAgICAgIG9ialsibSIgKyBpZF0uc3VtbWFyeSA9IHt9Ow0KICAgICAgICBmb3IgKHZhciBpID0gMDsgaSA8IHN1bW1hcnkubGVuZ3RoOyBpKyspIHsNCiAgICAgICAgICAgIHZhciBjaWQgPSBzdW1tYXJ5W2ldLmlkOw0KICAgICAgICAgICAgaW5pdChjaWQsIG9ialsibSIgKyBpZF0uc3VtbWFyeSk7DQogICAgICAgIH0NCiAgICB9DQp9DQovLy0taW5pdGlhbGl6ZQ0KLy90b2dnbGVkaXNwbGF5LS0NCnZhciBjaGFpbkFycj1bXTsNCmZ1bmN0aW9uIGdldGNoYWluKGlkKXsNCiAgICBjaGFpbkFyci51bnNoaWZ0KCdtJytpZCk7DQogICAgdmFyIHBhcmVudD1kb2N1bWVudC5nZXRFbGVtZW50QnlJZChpZCkuZ2V0QXR0cmlidXRlKCdlZDpwYXJlbnRpZCcpOw0KICAgIGlmKCFwYXJlbnQpew0KICAgICAgICByZXR1cm47DQogICAgfQ0KICAgIGdldGNoYWluKHBhcmVudCk7DQp9DQpmdW5jdGlvbiBnZXRvYmooaWQpIHsNCiAgICBjaGFpbkFycj1bXTsNCiAgICBnZXRjaGFpbihpZCk7DQogICAgdmFyIG1haW49Y2hhaW5BcnJbMF07DQogICAgaWYoY2hhaW5BcnIubGVuZ3RoPjEpew0KICAgICAgICB2YXIgb2JqPWRhdGFUcmVlW21haW5dOw0KICAgICAgICAvLyBjb25zb2xlLmxvZyhjaGFpbkFycik7DQogICAgICAgIGZvcih2YXIgaT0xO2k8Y2hhaW5BcnIubGVuZ3RoO2krKykgew0KICAgICAgICAgICAgdmFyIGEgPSBjaGFpbkFycltpXTsNCiAgICAgICAgICAgIGZvcih2YXIgaj0wO2o8T2JqZWN0LmtleXMob2JqKS5sZW5ndGg7aisrKXsNCiAgICAgICAgICAgICAgICB2YXIgY29iaj0gb2JqW09iamVjdC5rZXlzKG9iailbal1dW2FdOw0KICAgICAgICAgICAgICAgIGlmKGNvYmopew0KICAgICAgICAgICAgICAgICAgICBvYmo9Y29iajsNCiAgICAgICAgICAgICAgICAgICAgY29udGludWUNCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9DQogICAgICAgIH0NCiAgICAgICAgcmV0dXJuIG9iag0KICAgIH1lbHNlew0KICAgICAgICB2YXIgb2JqPWRhdGFUcmVlW21haW5dOw0KICAgICAgICByZXR1cm4gb2JqDQogICAgfQ0KDQp9DQpmb3IodmFyIGk9MDtpPHNoYXBlLmxlbmd0aDtpKyspew0KICAgIHNoYXBlW2ldLm9uY2xpY2s9ZnVuY3Rpb24gKCkgew0KICAgICAgICB2YXIgaWQ9TnVtYmVyKHRoaXMuZ2V0QXR0cmlidXRlKCdlZDp0b2d0b3BpY2lkJykpOw0KICAgICAgICB2YXIgb2JqPWdldG9iaihpZCk7DQoNCiAgICAgICAgdmFyIHR5cGU9b2JqLnRvZ3R5cGU9PT0nbWludXMnPydwbHVzJzonbWludXMnOw0KICAgICAgICB2YXIgZGlzcGxheT1vYmoudG9ndHlwZT09PSdtaW51cyc/J25vbmUnOidibG9jayc7DQogICAgICAgIHRoaXMuY2hpbGRyZW5bMF0uc2V0QXR0cmlidXRlKCd4bGluazpocmVmJywnIycrdHlwZSk7DQogICAgICAgIG9iai50b2d0eXBlPXR5cGU7DQogICAgICAgIGNoZWNrSUQ9b2JqOw0KDQogICAgICAgIHV0ZChvYmosaWQsZGlzcGxheSk7DQogICAgICAgIGV4dHJhUmVsYUZpbigpOw0KICAgIH0NCn0NCmZ1bmN0aW9uIHV0ZChvYmosaWQsc2hvdyxvYykgew0KDQogICAgdmFyIHBzaG93PWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGlkKS5zdHlsZS5kaXNwbGF5IT09ICdub25lJz8nYmxvY2snOidub25lJzsNCiAgICBpZiAob2JqLnJlbGFmcm9tKXsNCiAgICAgICAgaWYob2JqLnJlbGFmcm9tLmRpc3BsYXkhPT0gcHNob3cpew0KICAgICAgICAgICAgdmFyIHJlbGFmcm9tcz1PYmplY3Qua2V5cyhvYmoucmVsYWZyb20pOw0KICAgICAgICAgICAgcmVsYWZyb21zLnNwbGljZShyZWxhZnJvbXMuaW5kZXhPZignZGlzcGxheScpLDEpOw0KICAgICAgICAgICAgZm9yKHZhciBrPTA7azxyZWxhZnJvbXMubGVuZ3RoO2srKyl7DQogICAgICAgICAgICAgICAgdmFyIGQ9cmVsYWZyb21zW2tdOw0KICAgICAgICAgICAgICAgIGV4dHJhUmVsYVtkXS5pc0M9dHJ1ZTsNCiAgICAgICAgICAgIH0NCiAgICAgICAgICAgIG9iai5yZWxhZnJvbS5kaXNwbGF5ID0gcHNob3c7DQogICAgICAgIH0NCiAgICB9DQogICAgaWYgKG9iai5yZWxhdG8pew0KICAgICAgICBpZihvYmoucmVsYXRvLmRpc3BsYXkhPT0gcHNob3cpew0KICAgICAgICAgICAgdmFyIHJlbGF0b3M9T2JqZWN0LmtleXMob2JqLnJlbGF0byk7DQogICAgICAgICAgICByZWxhdG9zLnNwbGljZShyZWxhdG9zLmluZGV4T2YoJ2Rpc3BsYXknKSwxKTsNCiAgICAgICAgICAgIGZvcih2YXIgaz0wO2s8cmVsYXRvcy5sZW5ndGg7aysrKXsNCiAgICAgICAgICAgICAgICB2YXIgZD1yZWxhdG9zW2tdOw0KICAgICAgICAgICAgICAgIGV4dHJhUmVsYVtkXS5pc0M9dHJ1ZTsNCiAgICAgICAgICAgIH0NCiAgICAgICAgICAgIG9iai5yZWxhdG8uZGlzcGxheSA9IHBzaG93Ow0KICAgICAgICB9DQogICAgfQ0KICAgIGlmKG9iai5jYWxsKXsNCiAgICAgICAgdmFyIGNhbGxzPU9iamVjdC5rZXlzKG9iai5jYWxsKTsNCiAgICAgICAgaWYoY2hlY2tJRCE9PW9iail7DQogICAgICAgICAgICBmb3IodmFyIGk9MDtpIDwgY2FsbHMubGVuZ3RoO2krKyl7DQogICAgICAgICAgICAgICAgdmFyIGE9Y2FsbHNbaV0uc2xpY2UoMSk7DQogICAgICAgICAgICAgICAgdmFyIGI9b2JqLmNhbGxbY2FsbHNbaV1dOw0KICAgICAgICAgICAgICAgIHZhciBjPWIudG9ndHlwZTsNCiAgICAgICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChhKS5zdHlsZS5kaXNwbGF5PXNob3c7DQogICAgICAgICAgICAgICAgaWYgKGIucmVsYWZyb20mJiFjKXsNCiAgICAgICAgICAgICAgICAgICAgaWYoYi5yZWxhZnJvbS5kaXNwbGF5IT09IHNob3cpew0KICAgICAgICAgICAgICAgICAgICAgICAgdmFyIHJlbGFmcm9tcz1PYmplY3Qua2V5cyhiLnJlbGFmcm9tKTsNCiAgICAgICAgICAgICAgICAgICAgICAgIHJlbGFmcm9tcy5zcGxpY2UocmVsYWZyb21zLmluZGV4T2YoJ2Rpc3BsYXknKSwxKTsNCiAgICAgICAgICAgICAgICAgICAgICAgIGZvcih2YXIgaz0wO2s8cmVsYWZyb21zLmxlbmd0aDtrKyspew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhciBkPXJlbGFmcm9tc1trXTsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBleHRyYVJlbGFbZF0uaXNDPXRydWU7DQogICAgICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgICAgICAgICBiLnJlbGFmcm9tLmRpc3BsYXkgPSBzaG93Ow0KICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgIGlmIChiLnJlbGF0byYmIWMpew0KICAgICAgICAgICAgICAgICAgICBpZihiLnJlbGF0by5kaXNwbGF5IT09IHNob3cpew0KICAgICAgICAgICAgICAgICAgICAgICAgdmFyIHJlbGF0b3M9T2JqZWN0LmtleXMoYi5yZWxhdG8pOw0KICAgICAgICAgICAgICAgICAgICAgICAgcmVsYXRvcy5zcGxpY2UocmVsYXRvcy5pbmRleE9mKCdkaXNwbGF5JyksMSk7DQogICAgICAgICAgICAgICAgICAgICAgICBmb3IodmFyIGs9MDtrPHJlbGF0b3MubGVuZ3RoO2srKyl7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyIGQ9cmVsYXRvc1trXTsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBleHRyYVJlbGFbZF0uaXNDPXRydWU7DQogICAgICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgICAgICAgICBiLnJlbGF0by5kaXNwbGF5ID0gc2hvdzsNCiAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICBpZihjKXsNCiAgICAgICAgICAgICAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiZ1tlZFxcOnRvZ3RvcGljaWQ9JyIrYSsiJ10iKS5zdHlsZS5kaXNwbGF5PXNob3c7DQogICAgICAgICAgICAgICAgICAgIGlmKGM9PT0nbWludXMnKXsNCiAgICAgICAgICAgICAgICAgICAgICAgIHV0ZChiLGEsc2hvdykNCiAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgICAgICBpZiAoKGIuY2FsbHx8Yi5ib3VuZGFyeXx8Yi5zdW1tYXJ5KSYmYz09PSdwbHVzJykgew0KICAgICAgICAgICAgICAgICAgICAgICAgdXRkKGIsYSxzaG93LHRydWUpDQogICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgaWYoYi5jYWxsJiYhYykgew0KICAgICAgICAgICAgICAgICAgICB1dGQoYixhLHNob3csdHJ1ZSkNCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgaWYgKGIuc3VtbWFyeSYmIWMpIHsNCiAgICAgICAgICAgICAgICAgICAgdXRkKGIsYSxzaG93KQ0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICBpZiAoYi5ib3VuZGFyeSYmIWMpIHsNCiAgICAgICAgICAgICAgICAgICAgdXRkKGIsYSxzaG93KQ0KICAgICAgICAgICAgICAgIH0NCg0KICAgICAgICAgICAgfQ0KICAgICAgICB9DQogICAgfQ0KICAgIGlmKG9iai5zdW1tYXJ5KXsNCiAgICAgICAgdmFyIHN1bW1hcnlzPU9iamVjdC5rZXlzKG9iai5zdW1tYXJ5KTsNCiAgICAgICAgaWYoKGNoZWNrSUQhPT1vYmomJihvYmoudG9ndHlwZT09PSdtaW51cyd8fCFvYmoudG9ndHlwZSkpfHxjaGVja0lEPT09b2JqKXsNCiAgICAgICAgICAgIGZvcih2YXIgaT0wO2k8c3VtbWFyeXMubGVuZ3RoO2krKyl7DQogICAgICAgICAgICAgICAgdmFyIGE9c3VtbWFyeXNbaV0uc2xpY2UoMSk7DQogICAgICAgICAgICAgICAgdmFyIGI9b2JqLnN1bW1hcnlbc3VtbWFyeXNbaV1dOw0KICAgICAgICAgICAgICAgIC8vIGNvbnNvbGUubG9nKGEpOw0KICAgICAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGEpLnN0eWxlLmRpc3BsYXk9c2hvdzsNCi8vICAgICAgICAgICAgICAgIGlmKGMpew0KLy8gICAgICAgICAgICAgICAgICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoImdbZWRcXDp0b2d0b3BpY2lkPSciK2ErIiddIikuc3R5bGUuZGlzcGxheT1zaG93Ow0KLy8gICAgICAgICAgICAgICAgICAgIGlmKGM9PT0nbWludXMnKXsNCi8vICAgICAgICAgICAgICAgICAgICAgICAgdXRkKGIsc2hvdykNCi8vICAgICAgICAgICAgICAgICAgICB9DQovLyAgICAgICAgICAgICAgICAgICAgaWYgKGIuY2FsbCYmYz09PSdwbHVzJykgew0KLy8gICAgICAgICAgICAgICAgICAgICAgICB1dGQoYixzaG93LHRydWUpDQovLyAgICAgICAgICAgICAgICAgICAgfQ0KLy8gICAgICAgICAgICAgICAgfQ0KLy8gICAgICAgICAgICAgICAgaWYoYi5jYWxsJiYhYykgew0KLy8gICAgICAgICAgICAgICAgICAgIHV0ZChiLHNob3csdHJ1ZSkNCi8vICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICBpZihPYmplY3Qua2V5cyhiKS5sZW5ndGghPT0wKXsNCiAgICAgICAgICAgICAgICAgICAgdXRkKGIsYSxzaG93KQ0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgIH0NCiAgICBpZihvYmouYm91bmRhcnkpew0KICAgICAgICB2YXIgYm91bmRhcnlzPU9iamVjdC5rZXlzKG9iai5ib3VuZGFyeSk7DQogICAgICAgIGlmKGNoZWNrSUQhPT1vYmopew0KICAgICAgICAgICAgZm9yKHZhciBpPTA7aTxib3VuZGFyeXMubGVuZ3RoO2krKyl7DQogICAgICAgICAgICAgICAgdmFyIGE9Ym91bmRhcnlzW2ldLnNsaWNlKDEpOw0KICAgICAgICAgICAgICAgIHZhciBiPW9iai5ib3VuZGFyeVtib3VuZGFyeXNbaV1dOw0KICAgICAgICAgICAgICAgIC8vIGNvbnNvbGUubG9nKGEpOw0KICAgICAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGEpLnN0eWxlLmRpc3BsYXk9c2hvdzsNCi8vICAgICAgICAgICAgICAgIGlmKGMpew0KLy8gICAgICAgICAgICAgICAgICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoImdbZWRcXDp0b2d0b3BpY2lkPSciK2ErIiddIikuc3R5bGUuZGlzcGxheT1zaG93Ow0KLy8gICAgICAgICAgICAgICAgICAgIGlmKGM9PT0nbWludXMnKXsNCi8vICAgICAgICAgICAgICAgICAgICAgICAgdXRkKGIsc2hvdykNCi8vICAgICAgICAgICAgICAgICAgICB9DQovLyAgICAgICAgICAgICAgICAgICAgaWYgKGIuY2FsbCYmYz09PSdwbHVzJykgew0KLy8gICAgICAgICAgICAgICAgICAgICAgICB1dGQoYixzaG93LHRydWUpDQovLyAgICAgICAgICAgICAgICAgICAgfQ0KLy8gICAgICAgICAgICAgICAgfQ0KLy8gICAgICAgICAgICAgICAgaWYoYi5jYWxsJiYhYykgew0KLy8gICAgICAgICAgICAgICAgICAgIHV0ZChiLHNob3csdHJ1ZSkNCi8vICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICBpZihPYmplY3Qua2V5cyhiKS5sZW5ndGghPT0wKXsNCiAgICAgICAgICAgICAgICAgICAgdXRkKGIsYSxzaG93KQ0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgIH0NCiAgICBpZighb2MmJm9iai5jaGlsZCkgew0KICAgICAgICB2YXIgY2hpbGRzID0gT2JqZWN0LmtleXMob2JqLmNoaWxkKTsNCiAgICAgICAgZm9yICh2YXIgaSA9IDA7IGkgPCBjaGlsZHMubGVuZ3RoOyBpKyspIHsNCiAgICAgICAgICAgIHZhciBhID0gY2hpbGRzW2ldLnNsaWNlKDEpOw0KICAgICAgICAgICAgdmFyIGIgPSBvYmouY2hpbGRbY2hpbGRzW2ldXTsNCiAgICAgICAgICAgIHZhciBjID0gYi50b2d0eXBlOw0KICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoYSkuc3R5bGUuZGlzcGxheSA9IHNob3c7DQogICAgICAgICAgICBpZiAoYi5yZWxhZnJvbSYmIWMpew0KICAgICAgICAgICAgICAgIGlmKGIucmVsYWZyb20uZGlzcGxheSE9PSBzaG93KXsNCiAgICAgICAgICAgICAgICAgICAgdmFyIHJlbGFmcm9tcz1PYmplY3Qua2V5cyhiLnJlbGFmcm9tKTsNCiAgICAgICAgICAgICAgICAgICAgcmVsYWZyb21zLnNwbGljZShyZWxhZnJvbXMuaW5kZXhPZignZGlzcGxheScpLDEpOw0KICAgICAgICAgICAgICAgICAgICBmb3IodmFyIGs9MDtrPHJlbGFmcm9tcy5sZW5ndGg7aysrKXsNCiAgICAgICAgICAgICAgICAgICAgICAgIHZhciBkPXJlbGFmcm9tc1trXTsNCiAgICAgICAgICAgICAgICAgICAgICAgIGV4dHJhUmVsYVtkXS5pc0M9dHJ1ZTsNCiAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgICAgICBiLnJlbGFmcm9tLmRpc3BsYXkgPSBzaG93Ow0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0NCiAgICAgICAgICAgIGlmIChiLnJlbGF0byYmIWMpew0KICAgICAgICAgICAgICAgIGlmKGIucmVsYXRvLmRpc3BsYXkhPT0gc2hvdyl7DQogICAgICAgICAgICAgICAgICAgIHZhciByZWxhdG9zPU9iamVjdC5rZXlzKGIucmVsYXRvKTsNCiAgICAgICAgICAgICAgICAgICAgcmVsYXRvcy5zcGxpY2UocmVsYXRvcy5pbmRleE9mKCdkaXNwbGF5JyksMSk7DQogICAgICAgICAgICAgICAgICAgIGZvcih2YXIgaz0wO2s8cmVsYXRvcy5sZW5ndGg7aysrKXsNCiAgICAgICAgICAgICAgICAgICAgICAgIHZhciBkPXJlbGF0b3Nba107DQogICAgICAgICAgICAgICAgICAgICAgICBleHRyYVJlbGFbZF0uaXNDPXRydWU7DQogICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICAgICAgYi5yZWxhdG8uZGlzcGxheSA9IHNob3c7DQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfQ0KICAgICAgICAgICAgaWYgKGMpIHsNCiAgICAgICAgICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCJnW2VkXFw6dG9ndG9waWNpZD0nIiArIGEgKyAiJ10iKS5zdHlsZS5kaXNwbGF5ID0gc2hvdzsNCiAgICAgICAgICAgICAgICBpZiAoYyA9PT0gJ21pbnVzJykgew0KICAgICAgICAgICAgICAgICAgICB1dGQoYixhLHNob3cpDQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgIGlmICgoYi5jYWxsfHxiLmJvdW5kYXJ5fHxiLnN1bW1hcnkpJiZjPT09J3BsdXMnKSB7DQogICAgICAgICAgICAgICAgICAgIHV0ZChiLGEsc2hvdyx0cnVlKQ0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0NCiAgICAgICAgICAgIGlmIChiLmNhbGwmJiFjKSB7DQogICAgICAgICAgICAgICAgdXRkKGIsYSxzaG93LHRydWUpDQogICAgICAgICAgICB9DQogICAgICAgICAgICBpZiAoYi5zdW1tYXJ5JiYhYykgew0KICAgICAgICAgICAgICAgIHV0ZChiLGEsc2hvdykNCiAgICAgICAgICAgIH0NCiAgICAgICAgICAgIGlmIChiLmJvdW5kYXJ5JiYhYykgew0KICAgICAgICAgICAgICAgIHV0ZChiLGEsc2hvdykNCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgIH0NCn0NCg0KZnVuY3Rpb24gZXh0cmFSZWxhRmluKCkgew0KICAgIHZhciBleHRyYWtleXM9T2JqZWN0LmtleXMoZXh0cmFSZWxhKTsNCiAgICBmb3IodmFyIGk9MDtpPGV4dHJha2V5cy5sZW5ndGg7aSsrKXsNCiAgICAgICAgdmFyIGV4dHJhT2JqPWV4dHJhUmVsYVtleHRyYWtleXNbaV1dOw0KICAgICAgICBpZihleHRyYU9iai5pc0MgPT09IHRydWUpew0KICAgICAgICAgICAgdmFyIGZzaG93PWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGV4dHJhT2JqLmZyb21pZCkuc3R5bGUuZGlzcGxheSAhPT0nbm9uZSc/IHRydWU6IGZhbHNlOw0KICAgICAgICAgICAgdmFyIHRzaG93PWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGV4dHJhT2JqLnRvaWQpLnN0eWxlLmRpc3BsYXkgIT09J25vbmUnPyB0cnVlOiBmYWxzZTsNCiAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGV4dHJhT2JqLmlkKS5zdHlsZS5kaXNwbGF5PWZzaG93ICYmIHRzaG93PyAnYmxvY2snOiAnbm9uZSc7DQogICAgICAgICAgICBleHRyYVJlbGFbZXh0cmFrZXlzW2ldXS5pc0MgPSBmYWxzZTsNCiAgICAgICAgfQ0KICAgIH0NCn0='))</script>
+  </body>
+</html>
